@@ -43,8 +43,8 @@ export function Footer() {
         <div>
           <div className="label-jp">Contact</div>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li>{t({ ja: "LINE公式アカウント", en: "LINE Official Account" })}</li>
-            <li>{t({ ja: "システム要件・技術仕様のご相談", en: "System requirements & tech spec consulting" })}</li>
+            <li><Link to="/contact">{t({ ja: "LINE公式アカウント", en: "LINE Official Account" })}</Link></li>
+            <li><Link to="/contact">{t({ ja: "システム要件・技術仕様のご相談", en: "System requirements & tech spec consulting" })}</Link></li>
           </ul>
         </div>
       </div>

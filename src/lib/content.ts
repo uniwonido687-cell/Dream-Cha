@@ -200,8 +200,8 @@ export const caseStudies: CaseStudy[] = [
       en: "A designer-built members-only site needed LINE-login authentication and role-based content gating, but permission management was a technical wall.",
     },
     solution: {
-      ja: "デザインを1ミリも崩さず、LINEログイン連動の会員認証・ロール別のコンテンツ出し分け・決済連携をバックエンドに実装。鈴木が商談に同席し、先方のシステム担当者への技術説明も代行しました。",
-      en: "Without altering the design at all, we built LINE-login authentication, role-based content gating and payment integration into the backend. Suzuki joined the negotiation and handled the technical explanation to the client's system team.",
+      ja: "デザインを1ミリも崩さず、LINEログイン連動の会員認証やロール別のコンテンツ出し分け、決済連携をバックエンドに完璧に実装しました。 デザイナー様はデザインに100%集中でき、受注単価を大幅に引き上げることに成功しました。",
+      en: "We perfectly implemented high-security backend architecture—including LINE login, role-based access, and payment integration—while preserving 100% of your design. The designer was able to focus entirely on the creative aesthetics, successfully and significantly maximizing their project’s overall value and budget.",
     },
     result: {
       ja: "デザイナーは画面設計に集中したまま、クローズドな会員マーケティング基盤をフルパッケージで納品。受注単価が従来の3倍になりました。",
@@ -211,7 +211,7 @@ export const caseStudies: CaseStudy[] = [
     metrics: [
       { label: { ja: "形態", en: "Type" }, value: "会員制" },
       { label: { ja: "認証", en: "Auth" }, value: "LINE" },
-      { label: { ja: "受注単価", en: "Rate" }, value: "×3" },
+      { label: { ja: "受注単価", en: "Rate" }, value: "×2" },
     ],
     hue: "oklch(0.5 0.14 250)",
     image: "/cases/wordpress-video.jpg",
@@ -437,16 +437,16 @@ export const blogPosts: BlogPost[] = [
     date: "2025.11",
     tag: { ja: "お客様の声", en: "Client Voice" },
     title: {
-      ja: "失注寸前だった案件が、単価3倍の主力案件になりました",
-      en: "A deal I was about to lose became my flagship project — at triple the rate",
+      ja: "失注寸前だった案件が、単価2倍の主力案件になりました",
+      en: "A Near-Lost Project Multiplied My Rates by 2x and Became My Core Income",
     },
     profile: {
       ja: "フリーランスWebデザイナー / 高橋 健二 様",
       en: "Freelance Web Designer / Kenji Takahashi",
     },
     comment: {
-      ja: "正直に言うと、クライアントから突然『LINEログインと連動した会員サイトを作りたい』と言われたときは、頭が真っ白になりました。デザインには自信があるのに、システムの話になると何ひとつ答えられなくて……このままでは失注するな、と半分諦めていたんです。藁にもすがる思いでDreamChaさんに相談したら、鈴木さんが商談にそのまま同席してくれて。先方のシステム担当者からの細かい技術的な質問にも、その場でスラスラ答えてくれたんです。おかげで先方も一発で納得。あの瞬間は、正直ちょっと鳥肌が立ちました。結局その案件は受注単価がこれまでの3倍になって、今では自分の主力案件になっています。技術のことは全部お任せして、自分はデザインに100%集中できる——この安心感は、一度知ってしまったらもう戻れないですね。",
-      en: "Honestly, when my client suddenly said they wanted a members' site tied to LINE login, my mind went completely blank. I'm confident in my design, but the moment it turned technical I couldn't answer a single thing — I'd half given up, sure I'd lose the deal. As a last resort I reached out to DreamCha, and Suzuki just sat in on the meeting with me. He answered the client's system lead's detailed technical questions on the spot, effortlessly, and they were sold in one shot. That moment honestly gave me goosebumps. In the end my rate for that project tripled, and it's now my flagship work. I hand all the tech to them and pour 100% into design — once you've known this peace of mind, there's really no going back.",
+      ja: "クライアントから突然『LINEログイン連動の会員サイトを作りたい』と言われ、システムの話に答えられず失注を覚悟していました。諦め半分でDreamChaさんに相談したところ、おかげで商談は大成功し、受注単価はこれまでの2倍に。面倒な技術周りはすべてお任せして、自分はデザインに100%集中できるこの安心感は、一度知ってしまったらもう戻れないですね。",
+      en: "When a client requested a member site integrated with LINE login, I almost gave up, fearing I’d lose the project due to my lack of backend knowledge. In desperation, I reached out to DreamCha, and thanks to them, the meeting was a massive success, doubling my contract value. Outsourcing the complex engineering and focusing 100% on design provides an irreplaceable peace of mind I can never go back without.",
     },
   },
   {

@@ -106,10 +106,10 @@ function HomePage() {
           {[
             {
               icon: <Layers size={28} className="text-[var(--dreamblue)]" />,
-              title: { ja: "高度なUI実装とフロントエンド開発", en: "Advanced UI implementation & frontend development" },
+              title: { ja: "デザインを活かす、フルスタックなシステム・ドッキング", en: "Seamless Full-Stack Integration—Honoring Your Design" },
               body: {
-                ja: "DreamChaのフロントエンドエンジニアが、細かな余白、フォントファミリー、アニメーションなどを忠実にWeb上に再現します。各種ノーコードツール（STUDIO等）やWordPressへのシステムドッキングはもちろん、レスポンシブ対応やインタラクティブなUIの実装まで、デザインを活かす最適なフロントエンド開発を提供します。",
-                en: "Our frontend engineers faithfully reproduce fine spacing, font families and animation on the web. From system docking into no-code tools (STUDIO, etc.) and WordPress to responsive and interactive UI, we deliver the frontend that best serves your design.",
+                ja: "私たちDreamChaは、皆様がFigmaやSTUDIO等で制作されたデザインの世界観を1ミリも崩さず、裏側のシステムだけを美しく結合（ドッキング）させるスペシャリスト集団です。デザインの自由度を100%保ったまま、Stripe決済やLINEログイン、独自データベースなど、個人では実装が難しい重層的なバックエンドだけをスマートに実装します。",
+                en: "At DreamCha, we seamlessly integrate robust backend functionality into your Figma or STUDIO layouts without altering a single pixel of your aesthetic vision. Leaving your creative freedom 100% intact, we expertly handle complex engineering underneath—including Stripe payments, LINE login, and custom databases.",
               },
             },
             {
@@ -122,10 +122,10 @@ function HomePage() {
             },
             {
               icon: <Paintbrush size={28} className="text-[var(--dreamblue)]" />,
-              title: { ja: "見積もり・技術仕様策定の窓口代行", en: "Estimate & tech-spec negotiation on your behalf" },
+              title: { ja: "商談を裏から支える、見積もり・技術仕様の「台本」作成", en: "Backstage Tech Consulting & Client Response Scripting" },
               body: {
-                ja: "クライアントからの「この機能は実装できるか？」「セキュリティの仕様はどうなっているか？」といった、専門知識が必要な技術的商談の窓口をチーム長（鈴木）が全面代行します。皆様のチームの「CTO（最高技術責任者）」として商談に同席し、クライアントを納得させる完璧な技術提案を組み立てます。",
-                en: "Team lead Suzuki fully handles the technical negotiations that need expertise — \"can this feature be built?\", \"what's the security spec?\". He sits in as your team's CTO and builds the technical proposal that convinces the client.",
+                ja: "クライアントからの「この機能は実装できるか？」という難しい技術質問に対し、皆様が商談でそのまま答えるだけで一発納得させられる「完璧な回答・提案用の台本」を裏方から迅速に作成します。皆様のチームの専属CTOとして、あなたの口からプロの提案を届けてもらうことで、クライアントからの信頼を最大化させます。",
+                en: "We craft the perfect technical responses and pitch scripts for your client meetings, allowing you to answer complex engineering questions with absolute confidence. Acting as your team’s backstage CTO, we empower you to deliver expert proposals directly, maximizing your authority and trust with your clients.",
               },
             },
           ].map((b, i) => (

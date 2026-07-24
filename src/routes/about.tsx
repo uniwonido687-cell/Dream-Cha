@@ -106,10 +106,10 @@ function AboutPage() {
             },
             {
               n: "02",
-              title: { ja: "フロント × バックエンドのワンストップ対応", en: "Front-end × back-end under one roof" },
+              title: { ja: "バックエンド特化 × ご希望に応じたフロント支援", en: "Backend-Focused with Optional Frontend Support" },
               body: {
-                ja: "窓口は1つ。デザイン課題から複雑なAPI連携・決済・セキュリティまで一括で引き受けるため、あなたのクライアントへの提案力が劇的に跳ね上がります。クライアントには「フルパッケージで対応できるチーム」として紹介できます。",
-                en: "One point of contact for everything — from design challenges to complex API integrations, payments and security. Your pitch to clients becomes: \"yes, we can do all of it.\"",
+                ja: "窓口は1つ。複雑なAPI・決済・セキュリティ等のシステム構築を一括で引き受け、皆様の提案力を劇的に高めます。基本はバックエンド特化ですが、ご希望の場合に限りフロントの実装補助にも対応。 クライアントには「開発も万全なチーム」として安心してご紹介いただけます。",
+                en: "One single point of contact. We handle complex APIs, payments, and security, sharply boosting your project proposals. While specializing in the backend, we can support frontend implementation upon your request. Present us to your clients as your trusted full-package technical team.",
               },
             },
             {
