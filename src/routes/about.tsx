@@ -134,41 +134,94 @@ function AboutPage() {
 
       {/* Member profiles */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <Reveal><SectionLabel index="04">{t({ ja: "メンバー紹介", en: "Meet the team" })}</SectionLabel></Reveal>
-        <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "8名の開発陣が、あなたのデザインを支える。", en: "Eight engineers behind your design." })}
+        <Reveal>
+          <SectionLabel index="04">
+            {t({ ja: "メンバー紹介", en: "Meet the team" })}
+          </SectionLabel>
         </Reveal>
+
+        <Reveal
+          as="h2"
+          delay={80}
+          className="mt-6 font-serif text-3xl leading-tight md:text-4xl"
+        >
+          {t({
+            ja: "8名の開発陣が、あなたのデザインを支える。",
+            en: "Eight engineers behind your design.",
+          })}
+        </Reveal>
+
         <div className="mt-14 grid gap-12 md:grid-cols-2">
           {team.map((m, i) => (
-            <Reveal as="article" key={m.id} delay={(i % 2) * 100} className="card-lift border border-border p-8 rounded-sm">
+            <Reveal
+              as="article"
+              key={m.id}
+              delay={(i % 2) * 100}
+              className="card-lift flex h-full flex-col rounded-sm border border-border p-8"
+            >
               <div className="flex items-start gap-6">
-                <Avatar initials={m.initials} tone={m.tone} size={88} photo={m.photo} name={t(m.name)} />
+                <Avatar
+                  initials={m.initials}
+                  tone={m.tone}
+                  size={88}
+                  photo={m.photo}
+                  name={t(m.name)}
+                />
+
                 <div>
-                  <div className="font-mono text-xs text-muted-foreground">MEMBER · {String(i + 1).padStart(2, "0")}</div>
-                  <h3 className="mt-2 font-serif text-2xl leading-tight">{t(m.name)}</h3>
-                  <div className="mt-1 text-sm text-[var(--dreamblue)]">{t(m.role)}</div>
+                  <div className="font-mono text-xs text-muted-foreground">
+                    MEMBER · {String(i + 1).padStart(2, "0")}
+                  </div>
+
+                  <h3 className="mt-2 font-serif text-2xl leading-tight">
+                    {t(m.name)}
+                  </h3>
+
+                  <div className="mt-1 text-sm text-[var(--dreamblue)]">
+                    {t(m.role)}
+                  </div>
+
                   <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
                     <span>{t(m.location)}</span>
-                    {m.birth !== "----" && <><span>·</span><span>{m.birth}</span></>}
+
+                    {m.birth !== "----" && (
+                      <>
+                        <span>·</span>
+                        <span>{m.birth}</span>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
+
               {m.bio.ja !== "プロフィール準備中。" ? (
-                <>
-                  <p className="mt-6 text-sm leading-[1.8] text-muted-foreground">{t(m.bio)}</p>
+                <div className="flex flex-1 flex-col">
+                  <p className="mt-6 text-sm leading-[1.8] text-muted-foreground">
+                    {t(m.bio)}
+                  </p>
+
                   <blockquote className="mt-5 border-l-2 border-[var(--dreamblue)] pl-4 text-sm italic leading-[1.8] text-muted-foreground">
                     {t(m.quote)}
                   </blockquote>
-                  <div className="mt-5 flex flex-wrap gap-1.5">
+
+                  <div className="mt-auto flex flex-wrap gap-1.5 pt-6">
                     {m.skills.map((s) => (
-                      <span key={s} className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wider text-muted-foreground">
+                      <span
+                        key={s}
+                        className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wider text-muted-foreground"
+                      >
                         {s}
                       </span>
                     ))}
                   </div>
-                </>
+                </div>
               ) : (
-                <p className="mt-6 text-sm text-muted-foreground italic">{t({ ja: "プロフィール準備中", en: "Profile coming soon" })}</p>
+                <p className="mt-6 text-sm italic text-muted-foreground">
+                  {t({
+                    ja: "プロフィール準備中",
+                    en: "Profile coming soon",
+                  })}
+                </p>
               )}
             </Reveal>
           ))}
