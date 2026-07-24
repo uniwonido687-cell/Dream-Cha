@@ -79,7 +79,7 @@ function AboutPage() {
                 },
               },
             ].map((c, i) => (
-              <Reveal key={c.tag.ja} delay={i * 90} className="card-lift rounded-sm border border-border bg-background p-8">
+              <Reveal key={c.tag.ja} delay={i * 90} className="card-lift flex h-full flex-col rounded-sm border border-border p-8">
                 <div className="label-jp text-[var(--dreamblue)]">{t(c.tag)}</div>
                 <p className="mt-4 text-sm leading-[1.8] text-muted-foreground">{t(c.body)}</p>
               </Reveal>
@@ -200,19 +200,21 @@ function AboutPage() {
                     {t(m.bio)}
                   </p>
 
-                  <blockquote className="mt-5 border-l-2 border-[var(--dreamblue)] pl-4 text-sm italic leading-[1.8] text-muted-foreground">
-                    {t(m.quote)}
-                  </blockquote>
+                  <div className="mt-auto pt-5">
+                    <blockquote className="border-l-2 border-[var(--dreamblue)] pl-4 text-sm italic leading-[1.8] text-muted-foreground">
+                      {t(m.quote)}
+                    </blockquote>
 
-                  <div className="mt-auto flex flex-wrap gap-1.5 pt-6">
-                    {m.skills.map((s) => (
-                      <span
-                        key={s}
-                        className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wider text-muted-foreground"
-                      >
-                        {s}
-                      </span>
-                    ))}
+                    <div className="mt-5 flex flex-wrap gap-1.5">
+                      {m.skills.map((s) => (
+                        <span
+                          key={s}
+                          className="border border-border px-2.5 py-1 font-mono text-[10px] tracking-wider text-muted-foreground"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ) : (
