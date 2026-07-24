@@ -106,7 +106,10 @@ function HomePage() {
           {[
             {
               icon: <Layers size={28} className="text-[var(--dreamblue)]" />,
-              title: { ja: "デザインを活かす、フルスタックなシステム・ドッキング", en: "Seamless Full-Stack Integration—Honoring Your Design" },
+              title: {
+                ja: "デザインを活かす、フルスタックなシステム・ドッキング",
+                en: "Seamless Full-Stack Integration—Honoring Your Design",
+              },
               body: {
                 ja: "私たちDreamChaは、皆様がFigmaやSTUDIO等で制作されたデザインの世界観を1ミリも崩さず、裏側のシステムだけを美しく結合（ドッキング）させるスペシャリスト集団です。デザインの自由度を100%保ったまま、Stripe決済やLINEログイン、独自データベースなど、個人では実装が難しい重層的なバックエンドだけをスマートに実装します。",
                 en: "At DreamCha, we seamlessly integrate robust backend functionality into your Figma or STUDIO layouts without altering a single pixel of your aesthetic vision. Leaving your creative freedom 100% intact, we expertly handle complex engineering underneath—including Stripe payments, LINE login, and custom databases.",
@@ -114,25 +117,41 @@ function HomePage() {
             },
             {
               icon: <ShieldCheck size={28} className="text-[var(--dreamblue)]" />,
-              title: { ja: "複雑なシステム要件の完全実装", en: "Full implementation of complex system requirements" },
+              title: {
+                ja: "複雑なシステム要件の完全実装",
+                en: "Full implementation of complex system requirements",
+              },
               body: {
                 ja: "クライアントから求められるStripeなどの外部決済API連携、会員マイページ機能、複雑なデータベース（DB）構築、大規模ECサイト、強固なセキュリティ実装など、デザイナー様が一人で抱えるにはリスクの高すぎる重層的なバックエンド開発を、4名のバックエンドエンジニア陣が完璧に形にします。",
-                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC, robust security — the layered backend work that's too risky for a designer to carry alone is handled perfectly by our four backend engineers.",
+                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC, robust security—the layered backend work that's too risky for a designer to carry alone is handled perfectly by our four backend engineers.",
               },
             },
             {
               icon: <Paintbrush size={28} className="text-[var(--dreamblue)]" />,
-              title: { ja: "商談を裏から支える、見積もり・技術仕様の「台本」作成", en: "Backstage Tech Consulting & Client Response Scripting" },
+              title: {
+                ja: "商談を裏から支える、見積もり・技術仕様の「台本」作成",
+                en: "Backstage Tech Consulting & Client Response Scripting",
+              },
               body: {
                 ja: "クライアントからの「この機能は実装できるか？」という難しい技術質問に対し、皆様が商談でそのまま答えるだけで一発納得させられる「完璧な回答・提案用の台本」を裏方から迅速に作成します。皆様のチームの専属CTOとして、あなたの口からプロの提案を届けてもらうことで、クライアントからの信頼を最大化させます。",
                 en: "We craft the perfect technical responses and pitch scripts for your client meetings, allowing you to answer complex engineering questions with absolute confidence. Acting as your team’s backstage CTO, we empower you to deliver expert proposals directly, maximizing your authority and trust with your clients.",
               },
             },
           ].map((b, i) => (
-            <Reveal key={b.title.ja} delay={i * 110} className="border-t-2 border-[var(--dreamblue)] pt-8">
+            <Reveal
+              key={b.title.ja}
+              delay={i * 110}
+              className="flex flex-col border-t-2 border-[var(--dreamblue)] pt-8"
+            >
               {b.icon}
-              <h3 className="mt-4 font-serif text-xl leading-snug">{t(b.title)}</h3>
-              <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">{t(b.body)}</p>
+
+              <h3 className="mt-4 min-h-[3.5rem] font-serif text-xl leading-snug">
+                {t(b.title)}
+              </h3>
+
+              <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">
+                {t(b.body)}
+              </p>
             </Reveal>
           ))}
         </div>
