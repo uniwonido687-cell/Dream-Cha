@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="ja" className="dark">
+    <html lang="ja" className="dark" suppressHydrationWarning>
       <head>
         <HeadContent />
         {/* Google Analytics (GA4) — silent, for the team only */}
@@ -89,10 +89,25 @@ function RootShell({ children }: { children: ReactNode }) {
               "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-03SHWD8Y9P');",
           }}
         />
-        {/* Dark is the default; switch to light only if the visitor toggled it. Prevents theme flash. */}
+        {/* Apply the saved theme before React hydrates to prevent flicker. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.remove('dark')}}catch(e){}`,
+            __html: `
+            (function () {
+              try {
+                var savedTheme = localStorage.getItem("theme");
+                var isDark = savedTheme !== "light";
+
+                document.documentElement.classList.toggle("dark", isDark);
+                document.documentElement.style.colorScheme = isDark
+                  ? "dark"
+                  : "light";
+              } catch (error) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.style.colorScheme = "dark";
+              }
+            })();
+          `,
           }}
         />
       </head>
