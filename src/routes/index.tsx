@@ -175,7 +175,11 @@ function HomePage() {
           </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2">
             {[caseStudies[0], caseStudies[3]].map((c, i) => (
-              <Reveal key={c.id} delay={i * 120} className="card-lift rounded-sm border border-border bg-background overflow-hidden">
+              <Reveal
+                key={c.id}
+                delay={i * 120}
+                className="card-lift rounded-sm border border-border bg-background overflow-hidden flex flex-col"
+              >
                 {c.image ? (
                   <img
                     src={c.image}
@@ -185,21 +189,45 @@ function HomePage() {
                 ) : (
                   <div
                     className="aspect-[16/10] w-full"
-                    style={{ background: `linear-gradient(135deg, ${c.hue} 0%, oklch(0.85 0.02 80) 100%)` }}
+                    style={{
+                      background: `linear-gradient(135deg, ${c.hue} 0%, oklch(0.85 0.02 80) 100%)`,
+                    }}
                   />
                 )}
-                <div className="p-8">
-                  <div className="label-jp text-[var(--dreamblue)]">{t(c.category)}</div>
-                  <h3 className="mt-3 font-serif text-xl leading-snug">{t(c.title)}</h3>
-                  <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">{t(c.before)}</p>
-                  <div className="mt-6 grid grid-cols-3 gap-px overflow-hidden rounded-sm border border-border bg-border">
-                    {c.metrics.map((m) => (
-                      <div key={m.value} className="bg-background p-4 text-center">
-                        <div className="font-serif text-2xl text-[var(--dreamblue)]">{m.value}</div>
-                        <div className="mt-1 text-[10px] text-muted-foreground">{t(m.label)}</div>
-                      </div>
-                    ))}
+
+                <div className="flex flex-1 flex-col p-8">
+
+                  <div className="label-jp text-[var(--dreamblue)]">
+                    {t(c.category)}
                   </div>
+
+                  <h3 className="mt-3 min-h-[4.5rem] font-serif text-xl leading-snug">
+                    {t(c.title)}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">
+                    {t(c.before)}
+                  </p>
+
+                  <div className="mt-auto pt-6">
+                    <div className="grid grid-cols-3 gap-px overflow-hidden rounded-sm border border-border bg-border">
+                      {c.metrics.map((m) => (
+                        <div
+                          key={m.value}
+                          className="bg-background p-4 text-center"
+                        >
+                          <div className="font-serif text-2xl text-[var(--dreamblue)]">
+                            {m.value}
+                          </div>
+
+                          <div className="mt-1 text-[10px] text-muted-foreground">
+                            {t(m.label)}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                 </div>
               </Reveal>
             ))}
