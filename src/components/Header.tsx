@@ -2,12 +2,29 @@ import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { LangToggle } from "./LangToggle";
 import { ThemeToggle } from "./ThemeToggle";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
   const { t } = useLang();
   const [open, setOpen] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    const updateTheme = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
+    
+    updateTheme();
+    
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    
+    return () => observer.disconnect();
+  }, []);
 
   const nav = [
     { to: "/", label: t({ ja: "ホーム", en: "Home" }) },
@@ -24,9 +41,9 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8 lg:px-10">
         <Link to="/" className="flex items-center gap-2.5 shrink-0" onClick={() => setOpen(false)}>
           <img
-            src="/dream-cha-logo.png"
+            src={isDark ? "/dark-logo.png" : "/light-logo.png"}
             alt="Dream-cha"
-            className="h-9 w-9 rounded-full object-cover ring-2 ring-[var(--dreamgold)] ring-offset-2 ring-offset-background"
+            className="h-24 w-auto object-contain"
           />
         </Link>
 

@@ -57,11 +57,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Dream-cha — Dream Challenge Engineering" },
       { property: "og:description", content: "Performance-based co-development. Zero upfront. Full-stack. Your creative vision, backed by solid engineering." },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/favicon.png" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.png", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
@@ -81,6 +83,17 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="ja" className="dark" suppressHydrationWarning>
       <head>
         <HeadContent />
+        {/* Favicon circle styling */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              link[rel="icon"],
+              link[rel="apple-touch-icon"] {
+                border-radius: 50%;
+              }
+            `,
+          }}
+        />
         {/* Google Analytics (GA4) — silent, for the team only */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-03SHWD8Y9P" />
         <script

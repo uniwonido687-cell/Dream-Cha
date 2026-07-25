@@ -1,17 +1,36 @@
 import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { ArrowUpRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export function Footer() {
   const { t } = useLang();
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    const updateTheme = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
+    
+    updateTheme();
+    
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <footer className="mt-32 border-t border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4 md:px-10">
         <div className="md:col-span-2">
           <img
-            src="/dream-cha-logo.png"
+            src={isDark ? "/dark-logo.png" : "/light-logo.png"}
             alt="Dream-cha"
-            className="h-14 w-14 rounded-full object-cover ring-2 ring-[var(--dreamgold)] ring-offset-2 ring-offset-background"
+            className="h-20 w-auto object-contain"
           />
           <p className="mt-4 max-w-sm text-sm leading-[1.8] text-muted-foreground">
             {t({
