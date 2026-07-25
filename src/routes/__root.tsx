@@ -89,7 +89,7 @@ function RootShell({ children }: { children: ReactNode }) {
             __html: `
               link[rel="icon"],
               link[rel="apple-touch-icon"] {
-                border-radius: 50%;
+                border-radius: 100%;
               }
             `,
           }}
