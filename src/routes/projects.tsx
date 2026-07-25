@@ -24,7 +24,7 @@ function ProjectsPage() {
       <section className="hero-bg mx-auto max-w-7xl px-6 pb-16 pt-20 md:px-10 md:pb-24 md:pt-28">
         <Reveal><SectionLabel index="01">Projects</SectionLabel></Reveal>
         <Reveal as="h1" delay={80} className="mt-8 hero-title">
-          {t({ ja: "Before / After の数字で語る。", en: "The numbers tell the story." })}
+          {t({ ja: "Before / After の数字で語る", en: "The numbers tell the story." })}
         </Reveal>
         <Reveal as="p" delay={160} className="mt-8 max-w-2xl text-base leading-[1.8] text-muted-foreground md:text-lg">
           {t({

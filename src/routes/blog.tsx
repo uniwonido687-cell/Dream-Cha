@@ -23,7 +23,7 @@ function BlogPage() {
       <section className="hero-bg mx-auto max-w-7xl px-6 pb-16 pt-20 md:px-10 md:pb-24 md:pt-28">
         <Reveal><SectionLabel index="01">{t({ ja: "お客様の声", en: "Client Stories" })}</SectionLabel></Reveal>
         <Reveal as="h1" delay={80} className="mt-8 hero-title">
-          {t({ ja: "デザインを守り抜いた、開発パートナーとしてのお客様の声。", en: "Client voices — from designers whose work we protected." })}
+          {t({ ja: "デザインを守り抜いた、開発パートナーとしてのお客様の声", en: "Client voices — from designers whose work we protected." })}
         </Reveal>
         <Reveal as="p" delay={160} className="mt-8 max-w-2xl text-base leading-[1.8] text-muted-foreground md:text-lg">
           {t({
@@ -68,7 +68,7 @@ function BlogPage() {
       <section className="mx-auto max-w-7xl px-6 pb-24 md:px-10 md:pb-32">
         <Reveal className="rounded-sm border border-[var(--dreamblue)]/30 cta-bg px-8 py-14 text-center md:px-16">
           <h2 className="font-serif text-2xl md:text-3xl">
-            {t({ ja: "次は、あなたの番です。", en: "You could be the next story." })}
+            {t({ ja: "次は、あなたの番です", en: "You could be the next story." })}
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-[1.8] text-muted-foreground">
             {t({ ja: "システム要件の策定や技術的な仕様に関するご相談を承ります。", en: "We take on consultations about system requirements and technical specifications." })}

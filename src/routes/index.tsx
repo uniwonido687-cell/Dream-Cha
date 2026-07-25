@@ -21,7 +21,7 @@ function HomePage() {
           <Reveal><SectionLabel index="01">Dream-cha · ドリームチャ</SectionLabel></Reveal>
           <Reveal as="h1" delay={80} className="mt-8 hero-title">
             {t({
-              ja: <>デザインはできる。<br />でも、システムが組めないから、<br />その高単価案件を諦めますか？</>,
+              ja: <>デザインはできる<br />でも、システムが組めないから、<br />その高単価案件を諦めますか？</>,
               en: <>Great design, zero backend fear.<br />We are your complete tech partner.</>,
             })}
           </Reveal>
@@ -166,7 +166,7 @@ function HomePage() {
             <div>
               <SectionLabel index="04">{t({ ja: "解決事例", en: "Case Studies" })}</SectionLabel>
               <h2 className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-                {t({ ja: "Before / After の数字で語る。", en: "The numbers tell the story." })}
+                {t({ ja: "Before / After の数字で語る", en: "The numbers tell the story." })}
               </h2>
             </div>
             <Link to="/projects" className="hidden text-sm text-muted-foreground hover:text-foreground md:block">
@@ -238,7 +238,7 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <Reveal><SectionLabel index="05">{t({ ja: "チーム", en: "The Team" })}</SectionLabel></Reveal>
         <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "8名の専門家が、あなたの案件を守る。", en: "Eight specialists dedicated to your project." })}
+          {t({ ja: "8名の専門家が、あなたの案件を守る", en: "Eight specialists dedicated to your project." })}
         </Reveal>
         <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           {team.map((m, i) => (
@@ -261,7 +261,7 @@ function HomePage() {
         <Reveal className="rounded-sm border border-[var(--dreamblue)]/30 cta-bg px-8 py-16 text-center md:px-16 md:py-24">
           <span className="label-jp text-[var(--dreamblue)]">{t({ ja: "お問い合わせ", en: "Contact" })}</span>
           <h2 className="mt-6 font-serif text-3xl md:text-4xl">
-            {t({ ja: "システム要件の策定から、技術仕様のご相談まで。", en: "From defining system requirements to technical specs." })}
+            {t({ ja: "システム要件の策定から、技術仕様のご相談まで", en: "From defining system requirements to technical specs." })}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-[1.8] text-muted-foreground md:text-base">
             {t({

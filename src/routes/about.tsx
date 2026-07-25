@@ -26,7 +26,7 @@ function AboutPage() {
         <Reveal><SectionLabel index="01">About</SectionLabel></Reveal>
         <Reveal as="h1" delay={80} className="mt-8 hero-title">
           {t({
-            ja: <>孤独なクリエイターを、<br />リスクと限界から解放するために。</>,
+            ja: <>孤独なクリエイターを、<br />リスクと限界から解放するために</>,
             en: <>Built to free solo creators<br />from risk and technical walls.</>,
           })}
         </Reveal>
@@ -92,7 +92,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <Reveal><SectionLabel index="03">{t({ ja: "チームのメリット", en: "What working with us looks like" })}</SectionLabel></Reveal>
         <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "3つの約束。", en: "Three promises." })}
+          {t({ ja: "3つの約束", en: "Three promises." })}
         </Reveal>
         <dl className="mt-14 space-y-0 divide-y divide-border">
           {[
@@ -146,7 +146,7 @@ function AboutPage() {
           className="mt-6 font-serif text-3xl leading-tight md:text-4xl"
         >
           {t({
-            ja: "8名の開発陣が、あなたのデザインを支える。",
+            ja: "8名の開発陣が、あなたのデザインを支える",
             en: "Eight engineers behind your design.",
           })}
         </Reveal>
@@ -181,12 +181,11 @@ function AboutPage() {
                     {t(m.role)}
                   </div>
 
-                  <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
+                  <div className="mt-2 flex flex-wrap gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
                     <span>{t(m.location)}</span>
 
                     {t(m.eYears) !== "----" && (
                       <>
-                        <span>:</span>
                         <span>{t(m.eYears)}</span>
                       </>
                     )}
@@ -236,7 +235,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <Reveal className="rounded-sm border border-[var(--dreamblue)]/30 cta-bg px-8 py-14 text-center md:px-16">
           <h2 className="font-serif text-2xl md:text-3xl">
-            {t({ ja: "システム要件の策定から、技術仕様のご相談まで。", en: "From defining system requirements to technical specs." })}
+            {t({ ja: "", en: "From defining system requirements to technical specs." })}
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-[1.8] text-muted-foreground">
             {t({

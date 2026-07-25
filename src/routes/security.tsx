@@ -94,7 +94,7 @@ function SecurityPage() {
         <Reveal><SectionLabel index="01">{t({ ja: "開発規約・セキュリティポリシー", en: "Development Policy & Security" })}</SectionLabel></Reveal>
         <Reveal as="h1" delay={80} className="mt-8 hero-title">
           {t({
-            ja: <>技術と信頼を、一切のブラックボックス<br />なしに透明化する。</>,
+            ja: <>技術と信頼を、一切のブラックボックス<br />なしに透明化する</>,
             en: <>Technology and trust — made fully<br />transparent, zero black boxes.</>,
           })}
         </Reveal>
@@ -114,7 +114,7 @@ function SecurityPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <Reveal><SectionLabel index="02">{t({ ja: "セキュリティポリシー", en: "Security Policy" })}</SectionLabel></Reveal>
         <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "5つの技術的防衛基準。", en: "Five technical defence standards." })}
+          {t({ ja: "5つの技術的防衛基準", en: "Five technical defence standards." })}
         </Reveal>
         <Reveal as="p" delay={140} className="mt-4 max-w-xl text-sm leading-[1.8] text-muted-foreground">
           {t({
@@ -140,7 +140,7 @@ function SecurityPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <Reveal><SectionLabel index="03">{t({ ja: "開発・権利の規約", en: "Development & Rights Policy" })}</SectionLabel></Reveal>
           <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-            {t({ ja: "等価交換のクリーンルール。", en: "The clean rules of equal exchange." })}
+            {t({ ja: "等価交換のクリーンルール", en: "The clean rules of equal exchange." })}
           </Reveal>
           <Reveal as="p" delay={140} className="mt-4 max-w-xl text-sm leading-[1.8] text-muted-foreground">
             {t({
@@ -164,7 +164,7 @@ function SecurityPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <Reveal className="rounded-sm border border-[var(--dreamblue)]/30 cta-bg px-8 py-14 text-center md:px-16">
           <h2 className="font-serif text-2xl md:text-3xl">
-            {t({ ja: "規約をご確認の上、テクニカル相談へ。", en: "Policies reviewed. Let's talk technical." })}
+            {t({ ja: "規約をご確認の上、テクニカル相談へ", en: "Policies reviewed. Let's talk technical." })}
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-[1.8] text-muted-foreground">
             {t({

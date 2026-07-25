@@ -112,7 +112,7 @@ function RecruitPage() {
           </Reveal>
           <Reveal as="h1" delay={80} className="mt-8 hero-title">
             {t({
-              ja: <>互いの限界を相殺し、<br />ひとつの完璧なプロダクトを創る。</>,
+              ja: <>互いの限界を相殺し、<br />ひとつの完璧なプロダクトを創る</>,
               en: <>Eliminate each other's limits.<br />Build one perfect product.</>,
             })}
           </Reveal>
@@ -183,7 +183,7 @@ function RecruitPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <Reveal><SectionLabel index="03">{t({ ja: "報酬の思想", en: "Compensation Philosophy" })}</SectionLabel></Reveal>
           <Reveal as="h2" delay={80} className="mt-6 font-serif text-3xl leading-tight md:text-4xl">
-            {t({ ja: "中抜きのない、プロ同士の等価交換。", en: "Zero middlemen. Pure peer-to-peer value exchange." })}
+            {t({ ja: "中抜きのない、プロ同士の等価交換", en: "Zero middlemen. Pure peer-to-peer value exchange." })}
           </Reveal>
           <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-3">
             {[
@@ -217,7 +217,7 @@ function RecruitPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <Reveal className="rounded-sm border border-[var(--dreamblue)]/30 cta-bg px-8 py-14 text-center md:px-16">
           <h2 className="font-serif text-2xl md:text-3xl">
-            {t({ ja: "ポートフォリオを添えてエントリーする。", en: "Apply with your portfolio." })}
+            {t({ ja: "ポートフォリオを添えてエントリーする", en: "Apply with your portfolio." })}
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-[1.8] text-muted-foreground">
             {t({
