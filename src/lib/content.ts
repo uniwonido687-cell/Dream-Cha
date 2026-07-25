@@ -9,7 +9,7 @@ export type Member = {
   name: Bi;
   role: Bi;
   location: Bi;
-  birth: string;
+  eYears: Bi;
   skills: string[];
   photo?: string;
   bio: Bi;
@@ -26,8 +26,8 @@ export const team: Member[] = [
       ja: "チームリーダー / テクニカルディレクター",
       en: "Team Leader / Technical Director",
     },
-    location: { ja: "東京都", en: "Tokyo" },
-    birth: "1999.07.12",
+    location: { ja: "経験年数", en: "6 years" },
+    eYears: { ja: "6年", en: "Years of experience" },
     skills: ["Go", "Python / FastAPI", "AWS", "Docker", "DB設計", "要件定義"],
     photo: "/members/suzuki.jpg",
     bio: {
@@ -48,8 +48,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "東京都", en: "Tokyo" },
-    birth: "1996.02.14",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "9年", en: "9 Years" },
     skills: [
       "Node.js",
       "TypeScript",
@@ -77,8 +77,8 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア",
       en: "Backend Engineer",
     },
-    location: { ja: "大阪府", en: "Osaka" },
-    birth: "2000.02.18",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "5年", en: "5 Years" },
     skills: [
       "Stripe API",
       "決済API連携",
@@ -105,8 +105,8 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア / データベース最適化",
       en: "Backend Engineer / Database Optimisation",
     },
-    location: { ja: "福岡県", en: "Fukuoka" },
-    birth: "1995.05.05",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "7年", en: "7Years" },
     skills: [
       "Node.js",
       "Python",
@@ -134,8 +134,8 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア / インフラ",
       en: "Backend & Infrastructure Engineer",
     },
-    location: { ja: "北海道", en: "Hokkaido" },
-    birth: "1991.09.30",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "13年", en: "13 Years" },
     skills: ["Go", "PostgreSQL", "Redis", "Docker", "GitHub Actions"],
     photo: "/members/nakamura.jpg",
     bio: {
@@ -156,8 +156,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "愛知県", en: "Aichi" },
-    birth: "1997.11.22",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "8年", en: "8 Years" },
     skills: [
       "Node.js",
       "TypeScript",
@@ -185,8 +185,8 @@ export const team: Member[] = [
       ja: "UI/UXデザイナー",
       en: "UI/UX Designer",
     },
-    location: { ja: "京都府", en: "Kyoto" },
-    birth: "1992.12.05",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "9年", en: "9 Years" },
     skills: [
       "UI/UX",
       "Figma",
@@ -212,8 +212,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "広島県", en: "Hiroshima" },
-    birth: "1998.03.19",
+    location: { ja: "経験年数", en: "Years of experience" },
+    eYears: { ja: "10年", en: "10 Years" },
     skills: [
       "TypeScript",
       "Next.js",

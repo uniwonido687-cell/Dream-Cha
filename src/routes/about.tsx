@@ -184,10 +184,10 @@ function AboutPage() {
                   <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
                     <span>{t(m.location)}</span>
 
-                    {m.birth !== "----" && (
+                    {t(m.eYears) !== "----" && (
                       <>
-                        <span>·</span>
-                        <span>{m.birth}</span>
+                        <span>:</span>
+                        <span>{t(m.eYears)}</span>
                       </>
                     )}
                   </div>
