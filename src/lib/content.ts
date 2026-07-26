@@ -86,7 +86,7 @@ export const team: Member[] = [
       "Node.js",
       "PostgreSQL",
     ],
-    photo: "/members/yamazaki-taiyo.jpg",
+    photo: "/members/yamazaki-taiyo.png",
     bio: {
       ja: "Stripeをはじめとする外部決済APIの組み込みと、セキュリティ要件の設計を専門とするバックエンドエンジニア。金銭や重要な顧客情報を扱うシステムに対して、正確性と安全性を重視した堅牢な実装を提供します。",
       en: "A backend engineer specialising in external payment API integrations such as Stripe and the design of secure system requirements. He delivers robust implementations focused on accuracy and safety for systems handling payments and sensitive customer data.",
