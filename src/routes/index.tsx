@@ -98,8 +98,8 @@ function HomePage() {
         </Reveal>
         <Reveal as="p" delay={140} className="mt-6 max-w-3xl text-base leading-[1.8] text-muted-foreground">
           {t({
-            ja: "DreamCha（ドリームチャ）は、Webデザインの美しさと世界観をそのまま形にするための、頼れる開発パートナーです。皆様が制作されたFigmaやSTUDIOのフロント画面に対する高度なUI実装から、その裏側にある複雑なバックエンドシステム（Stripe決済、ログイン機能、API連携、データベース構築）までを完璧に構築。チーム専用の強力なシステム開発部門として、技術商談の窓口からバグの保証までトータルで引き受けます。",
-            en: "DreamCha is the reliable development partner for bringing the beauty and worldview of your web design to life. From advanced UI implementation of the Figma or STUDIO front-end you create, to the complex backend behind it (Stripe payments, login, API integration, database construction), we build it perfectly — handling everything from technical negotiation to bug guarantees as your dedicated system-development division.",
+            ja: "DreamCha（ドリームチャ）は、Webデザインの美しさと世界観をそのまま活かすための、頼れる技術パートナーです。皆様が制作・コーディングされたFigmaやSTUDIOのフロント画面の仕様を完璧に尊重し、その裏側にある複雑なバックエンドシステム（Stripe決済、ログイン機能、API連携、データベース、サーバー構築）のみを専門に構築。チーム専用の強力なシステム開発部門として、技術商談の窓口からバグの保証までトータルで引き受けます。",
+            en: "DreamCha is your ultimate engineering partner, dedicated to seamlessly preserving the aesthetic beauty and distinct worldviews of your web designs. We fully respect the specifications of the frontend interfaces you have crafted or coded in Figma and STUDIO, specializing exclusively in structuring the complex backend systems behind them—including Stripe payments, authentication flows, API integrations, and database architectures. Operating as your team’s highly dedicated system development department, we manage everything from technical client consultations to full bug-warranty support.",
           })}
         </Reveal>
         <div className="mt-14 grid gap-10 md:grid-cols-3">
