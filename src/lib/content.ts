@@ -97,7 +97,7 @@ export const team: Member[] = [
     },
   },
   {
-    id: "noguchi",
+    id: "daiki",
     initials: "N",
     tone: "oklch(0.5 0.14 160 / 0.28)",
     name: { ja: "高橋 大樹", en: "Daiki Takahashi" },
@@ -115,7 +115,7 @@ export const team: Member[] = [
       "API設計",
       "高負荷対策",
     ],
-    photo: "/members/noguchi.jpg",
+    photo: "/members/daiki.png",
     bio: {
       ja: "大規模データベース設計とバックエンド開発に5年間携わり、高負荷に耐えるデータ基盤と高速APIの構築を専門とするエンジニア。利用者やデータ量の増加を見据え、長期的な運用と拡張に対応できるシステムを設計します。",
       en: "A backend engineer with five years of experience in large-scale database design and development. He specialises in high-performance APIs and data platforms built to support increasing traffic, growing datasets, and long-term system expansion.",
