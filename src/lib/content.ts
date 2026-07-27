@@ -259,16 +259,16 @@ export const caseStudies: CaseStudy[] = [
       en: "Closed Members-only Marketing Platform Build",
     },
     before: {
-      ja: "デザイナーが設計した会員限定サイトに、LINEログイン連動の会員認証と、権限ごとに限定コンテンツを出し分ける仕組みが必要だったが、権限管理の実装が技術的な壁となっていた。",
-      en: "A designer-built members-only site needed LINE-login authentication and role-based content gating, but permission management was a technical wall.",
+      ja: "デザイナーが設計した会員限定サイトに、LINEログイン連動の会員認証と、権限ごとに限定コンテンツを出し分ける仕組みが必要だったが、権限管理の実装や不正アクセスを防ぐ強固なセキュリティ設計が技術的な大きな壁となっていた。",
+      en: "A membership-only site designed by a web designer required member authentication integrated with LINE Login and a system to distribute exclusive content dynamic by user roles. However, implementing strict role management and robust security architecture to prevent unauthorized access presented a major technical bottleneck.",
     },
     solution: {
-      ja: "デザインを1ミリも崩さず、LINEログイン連動の会員認証やロール別のコンテンツ出し分け、決済連携をバックエンドに完璧に実装しました。 デザイナー様はデザインに100%集中でき、受注単価を大幅に引き上げることに成功しました。",
-      en: "We perfectly implemented high-security backend architecture—including LINE login, role-based access, and payment integration—while preserving 100% of your design. The designer was able to focus entirely on the creative aesthetics, successfully and significantly maximizing their project’s overall value and budget.",
+      ja: "デザインを1ミリも崩さず、LINEログイン連動の会員認証やロール（役割）別の動的コンテンツ出し分け、決済連携をバックエンドに完璧に実装しました。認証基盤には「OAuth 2.0 / OIDC」に準拠したセキュアな設計を導入し、中継サーバー（AWS Lambda）でのトークン署名検証や、データベース（Amazon Aurora）側での行レベルセキュリティ（RLS）によるトランザクション排他制御を構築。デザイナー様は複雑な仕様を意識せずデザインに100%集中でき、受注単価を大幅に引き上げることに成功しました。",
+      en: "Without altering a single pixel of the design, we perfectly implemented LINE Login integrated authentication, role-based dynamic content filtering, and payment gateway linkages into the backend. By adopting a secure design compliant with OAuth 2.0 / OIDC, we established strict token signature verification via AWS Lambda and row-level security (RLS) with transactional mutual exclusion on Amazon Aurora. This allowed the designer to focus 100% on the visual creative without worrying about complex backend logic, successfully driving a substantial increase in contract value.",
     },
     result: {
-      ja: "デザイナーは画面設計に集中したまま、クローズドな会員マーケティング基盤をフルパッケージで納品。受注単価が従来の3倍になりました。",
-      en: "The designer stayed focused on the UI while a full-package closed membership marketing platform was delivered — tripling their project rate.",
+      ja: "デザイナーは画面設計に集中したまま、クローズドな会員マーケティング基盤をエンタープライズ基準のフルパッケージで納品。セキュリティリスクやデータ改ざんの危険を完全にゼロに抑え、受注単価が従来の3倍になりました。",
+      en: "The designer maximized their focus on interface layouts while delivering an enterprise-grade, closed membership marketing infrastructure as a full package. Security threats and data tampering risks were mitigated to absolute zero, successfully tripling the project's standard contract unit price.",
     },
     stack: ["Next.js", "LINEログイン", "会員認証", "Stripe", "PostgreSQL"],
     metrics: [
@@ -289,15 +289,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "物販ECに月額課金の仕組みを載せたいという要望だったが、過去に別のエンジニアの実装でプラグインの不具合による決済エラーが多発し、大クレームになったトラウマがあった。",
-      en: "The client wanted recurring monthly billing on a retail EC site, but a past engineer's plugin-based build had caused repeated payment errors and a major complaint — a real trauma.",
+      en: "The client requested adding a monthly subscription billing mechanism to their product e-commerce site. However, they had experienced severe trauma from a previous project where another engineer's faulty plugin implementation caused frequent payment errors, resulting in major client complaints.",
     },
     solution: {
-      ja: "デザインの世界観を完璧に保ったまま、Stripe BillingのAPIを裏側で驚くほど強固に繋ぎ込み。定期課金・カード更新・失敗リトライを堅牢に構築しました。",
-      en: "Keeping the design's worldview perfectly intact, we wired the Stripe Billing API into the backend remarkably robustly — recurring billing, card updates and retry logic, all rock-solid.",
+      ja: "デザインの世界観を完璧に保ったまま、Stripe BillingのAPIを裏側で驚くほど強固に繋ぎ込み。定期課金・カード更新・失敗リトライを堅牢に構築しました。Webサイトの美しさを損なうことなく、Webhookハンドリングによるイベント駆動型ロジックをNode.js環境で実装し、クレジットカードの有効期限切れに伴う自動更新フローや、決済失敗時のリトライ・通知アルゴリズムをシームレスに最適化。データベース（PostgreSQL）層とも強固に連携させ、決済と在庫管理のデータの不整合を完全にシャットアウトしました。",
+      en: "While perfectly preserving the visual world of the design, we integrated the Stripe Billing API in the backend with astonishing robustness, firmly constructing recurring billing, card auto-updates, and failure retry logic. Without compromising the beauty of the website, we implemented an event-driven logic via Webhook handling in a Node.js environment, seamlessly optimizing the automatic renewal flow for expiring credit cards and the retry/notification algorithms for failed transactions. We also established a bulletproof linkage with the database (PostgreSQL) layer, completely shutting out any potential data inconsistencies between payment statuses and inventory tracking.",
     },
     result: {
-      ja: "納品後のバグは一切なく、クライアントも大満足。継続課金型の物販ECを安定稼働で納品できました。",
-      en: "Zero post-launch bugs and a delighted client. A stable subscription retail EC was delivered.",
+      ja: "納品後のバグは一切なく、クライアントも大満足。継続課金型の物販ECを安定稼働で納品できました。Stripe決済に起因するエラーや納品後バグは「0」を記録し、ブランドの信頼を揺るがさない堅牢なサブスクリプションEC基盤を確立しました。",
+      en: "There were absolutely zero post-delivery bugs, and the client was highly satisfied. We successfully delivered a recurring-billing-based product e-commerce system running on highly stable operations. Post-delivery bugs stemming from Stripe transactions remained at absolute "0", establishing a rock-solid subscription e-commerce infrastructure that protects the brand’s integrity.",
     },
     stack: ["Stripe Billing", "Node.js", "EC", "PostgreSQL"],
     metrics: [
@@ -318,15 +318,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "大手不動産会社からの案件で、システム要件の仕様書が難解すぎてデザイナーが頭を抱えていた。外部の物件DBと自動同期する大量データ処理はノーコードでは実装不可能だった。",
-      en: "On a project for a major real-estate firm, the system-requirements spec was too complex for the designer, and auto-syncing large volumes of data from an external listings DB was impossible in no-code.",
+      en: "For a major real estate company project, the technical specification sheet for the system requirements was too cryptic, leaving the web designer overwhelmed. Processing massive datasets to automatically synchronize with an external property database was completely impossible using no-code platforms alone.",
     },
     solution: {
-      ja: "佐藤がデザインの意図（余白や動線）をエンジニア陣に完璧に『翻訳』。外部APIと定期通信し物件データを正規化して自動同期するバックエンドをPythonで構築しました。",
-      en: "Sato perfectly \"translated\" the design intent (spacing, flow) to the engineers, while we built a Python backend that polls the external API, normalises listings and auto-syncs them.",
+      ja: "佐藤がデザインの意図（余白や動線）をエンジニア陣に完璧に『翻訳』。外部APIと定期通信し物件データを正規化して自動同期するバックエンドをPythonで構築しました。さらに、膨大な物件データをストレスなく抽出するため、PostgreSQLデータベースに最適なインデックス（検索高速化の仕組み）を設計し、データ同期時のバッチ処理プロセスを効率化。フロントのレイアウトにバグを起こさない安全なデータ流し込みロジックを実装しました。",
+      en: "Sato perfectly translated the designer’s aesthetic intent (such as precise margins and user flows) to our engineering crew. We engineered a robust backend using Python that handles scheduled communication with external APIs to normalize and auto-sync the property records. Furthermore, to extract vast amounts of real estate data without stress, we designed optimal index structures within the PostgreSQL database and streamlined the batch execution workflow. A secure data injection logic was successfully deployed to prevent any dynamic layout issues on the frontend",
     },
     result: {
-      ja: "見た目の崩れが一切ない、超高速な検索システムが完成。「技術部門を丸ごと外注できる安心感」を実現しました。",
-      en: "Delivered an ultra-fast search system with zero visual breakage — the reassurance of outsourcing an entire technical department.",
+      ja: "見た目の崩れが一切ない、超高速な検索システムが完成。「技術部門を丸ごと外注できる安心感」を実現しました。自動同期の安定稼働に加え、デザイナーのこだわりであるマージンや余白、レスポンシブ時の「デザインの崩れ」は徹底的に排除して【0】を達成。アクセス集中時でも即座に結果を返す超高速検索により、クライアントからも極めて高い評価を獲得しました。",
+      en: "A lightning-fast search infrastructure was accomplished with absolute zero visual layout distortion, fulfilling the ultimate promise of providing peace of mind by acting as your entire outsourced tech department. Along with the highly stable operation of the automated synchronization, layout issues and breaking designs were completely eradicated to record an absolute 0. The ultra-fast querying architecture that delivers instantaneous search results even under heavy traffic loads won stellar acclaim from the client.",
     },
     stack: ["Python", "外部API連携", "PostgreSQL", "自動同期"],
     metrics: [
@@ -347,15 +347,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "個人で受けるには荷が重すぎるシステム開発案件で、スタッフ・設備ごとの空き状況をリアルタイムに反映する動的予約やダブルブッキング制御など、裏側の要件が複雑すぎた。",
-      en: "A system-development project too heavy to take on solo — real-time availability by staff and equipment, double-booking control, and other complex backend requirements.",
+      en: "The backend architecture for this system development project was far too heavy for an individual freelancer to manage safely, involving highly convoluted requirements such as dynamic scheduling to mirror staff/equipment availability in real time and sophisticated double-booking control.",
     },
     solution: {
-      ja: "『前払い不要の完全成果報酬（着金ベース）』で参画し、立替リスクゼロで対応。空き枠をリアルタイムに計算・ブロックする予約エンジンと排他制御をDB層に構築しました。",
-      en: "We joined on zero-upfront, fully performance-based (payment-triggered) terms, eliminating cash-advance risk, and built a real-time slot-blocking booking engine with exclusive-locking at the DB layer.",
+      ja: "『前払い不要の完全成果報酬（着金ベース）』で参画し、立替リスクゼロで対応。空き枠をリアルタイムに計算・ブロックする予約エンジンと排他制御をDB層に構築しました。Node.js環境における非同期のトランザクション処理とWebSocket技術を活用し、コンカレントアクセス（同時アクセス）発生時でもデータの整合性を厳格に保護。PostgreSQLデータベース側で適切な行レベルでの排他制御（ロック機構）を設計し、システムエラーによる予約の重複を根底から防止しました。",
+      en: "We onboarded the project on a 100% success-fee basis with zero upfront payment (milestone payout upon receipt), managing the infrastructure with absolute zero out-of-pocket risks. We engineered a proprietary reservation engine combined with concurrent mutual exclusion on the database layer to compute and block time slots dynamically in real time. Utilizing asynchronous transaction handling in a Node.js environment alongside WebSocket technology, we guaranteed strict data consistency under high concurrent user spikes. We designed robust row-level row locks inside the PostgreSQL layer, preventing any booking overlaps right at the foundation.",
     },
     result: {
-      ja: "鈴木が技術的なリスクの責任を100%引き受け、孤独なフリーランスの恐怖を解消。取りこぼしのないリアルタイム予約システムを納品しました。",
-      en: "Suzuki took 100% responsibility for the technical risk, easing the fear of freelancing alone. A real-time booking system with no missed slots was delivered.",
+      ja: "鈴木が技術的なリスクの責任を100%引き受け、孤独なフリーランスの恐怖を解消。取りこぼしのないリアルタイム予約システムを納品しました。予約枠の「重複」や決済に起因する「立替リスク」を完全にシャットアウトして【0】を達成。デザイナーが構築した世界観に完全連動する、機会損失ゼロの動的予約プラットフォームの安定稼働を実現しました。",
+      en: "Suzuki assumed 100% accountability for all technical and deployment risks, eliminating the crushing anxiety typical for solo freelancers. We delivered a highly accurate, real-time booking ecosystem without missing a single conversion opportunity. Booking duplicates and processing-related financial risks were completely eradicated to a recorded 0, resulting in a flawlessly operating dynamic reservation gateway aligned with the designer's creative vision.",
     },
     stack: ["Node.js", "WebSocket", "リアルタイム予約", "PostgreSQL"],
     metrics: [
@@ -376,15 +376,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "「STUDIOで制作したデザインLPをそのまま活かしつつ、裏側にStripeを使った月額サブスクリプション決済と、ユーザーが自分で契約内容を変更できるマイページ（請求管理画面）を作りたい」と相談された共同開発事例。",
-      en: "A designer asked us to keep their STUDIO-built landing page as-is while adding Stripe monthly subscriptions and a customer page where users manage their own billing.",
+      en: "A collaborative development case where a client consulted us to integrate a monthly subscription billing workflow using Stripe into their existing, high-fidelity design LP built on STUDIO, along with a user self-service portal (billing management page) to allow customers to modify their subscription plans on their own.",
     },
     solution: {
-      ja: "STUDIOの標準機能では実装不可能な「Stripe Payment Links」および「カスタマーポータル」の裏側ロジックを設計し、デザインを1ミリも崩さずにドッキングさせました。",
-      en: "Designed the backend logic for Stripe Payment Links and the Customer Portal — impossible with STUDIO's standard features — and docked it in without altering the design at all.",
+      ja: "STUDIOの標準機能では実装不可能な「Stripe Payment Links」および「カスタマーポータル」の裏側ロジックを設計し、デザインを1ミリも崩さずにドッキングさせました。Node.jsを用いた中間API（Webhookサーバー）を仲介させ、決済状態の変化やユーザーの契約プラン変更（アップグレード・ダウングレード）のイベントを検知・処理するバックエンド機構を構築。ノーコードによる圧倒的なフロントエンドの開発スピードと、外部決済プラットフォームの柔軟なAPI連携をセキュアに両立させました。",
+      en: "We engineered the underlying backend logic for Stripe Payment Links and the Customer Portal—functionalities entirely impossible to implement via standard STUDIO features—and docked them flawlessly into the system without altering a single pixel of the frontend visual. By deploying an intermediary API (Webhook handler) utilizing Node.js, we constructed a backend mechanism to instantly capture and process billing status transitions and plan modification events (upgrades/downgrades). This securely bridge the gap between high-speed no-code frontend development and the flexible API integration of an enterprise payment infrastructure.",
     },
     result: {
-      ja: "「STUDIOでは会員登録や決済機能を作れない」というノーコードの致命的な限界を突破。紙媒体出身のデザイナーが、自分の縄張りを守ったまま企業のDX案件という超高単価市場を開拓しました。",
-      en: "Broke past the fatal no-code limit that \"STUDIO can't do sign-up or payments,\" letting a print-background designer open up the high-value corporate DX market while keeping their own turf intact.",
+      ja: "「STUDIOでは会員登録や決済機能を作れない」というノーコードの致命的な限界を突破。紙媒体出身のデザイナーが、自分の縄張りを守ったまま企業のDX案件という超高単価市場を開拓しました。公開されたWebサイトは決済の安全性において◎（二重丸）の最高評価を獲得し、デザインの自由度を完全に維持したまま高セキュアな会員制サブスクリプション環境の安定運用を実現しました。",
+      en: "We successfully shattered the critical no-code bottleneck where STUDIO alone cannot manage user registrations or deep-linked billing engines. This opened up a lucrative enterprise DX market for a print-media-background designer while perfectly safeguarding their creative territory. The published site achieved a double-circle (◎) top rating for payment security, maintaining full layout integrity while ensuring a highly secure subscription environment.",
     },
     stack: ["STUDIO", "Stripe API (Payment Links)", "Node.js"],
     metrics: [
@@ -406,15 +406,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "職人による手づくりランドセルの世界観を保ちながら、カタログ請求・全国店舗案内・展示会予約・オンライン購入までを一つの導線でつなぐ必要があった。",
-      en: "The brand needed to preserve its artisan, handmade worldview while connecting catalog requests, a nationwide store guide, exhibition reservations and online purchase into one flow.",
+      en: "While fully preserving the artisanal world of a handmade satchel brand, it was necessary to seamlessly bridge catalog requests, nationwide store directories, exhibition reservations, and online purchasing workflows into a single, unified user journey.",
     },
     solution: {
-      ja: "ブランドのビジュアルを最大限に活かしたUIの上に、会員・カート機能、カタログ請求フォーム、販売スケジュール、店舗・展示会情報を動的に管理できる仕組みを構築。",
-      en: "On a UI that showcases the brand's visuals, we built member/cart functionality, a catalog-request form, sales-schedule management and dynamic store/exhibition information.",
+      ja: "ブランドのビジュアルを最大限に活かしたUIの上に、会員・カート機能、カタログ請求フォーム、販売スケジュール、店舗・展示会情報を動的に管理できる仕組みを構築。複数の複雑な機能（EC、予約、フォーム、CMS）を一元管理するため、バックエンドのデータ構造を正規化し、APIによるデータ連携を最適化。繁忙期のアクセス集中に耐えられるよう、インフラ側でのオートスケーリング構成とキャッシュ戦略を取り入れ、ブランドの信頼を守る強固な土台を実装しました。",
+      en: "On top of a high-fidelity UI that maximizes the brand's visual aesthetics, we constructed a dynamic backend architecture to manage member/cart functionality, catalog request forms, sales schedules, and store/exhibition information in real time. To centralize multiple complex features (E-commerce, booking engines, multi-step forms, and CMS), we normalized the core data models and optimized API payloads. Additionally, to withstand massive traffic spikes during peak sales windows, we integrated auto-scaling infrastructures and proactive caching strategies to implement a rock-solid foundation that safeguards the brand's reputation.",
     },
     result: {
-      ja: "情報収集から予約・購入までを回遊できるサイトとして公開。繁忙期の販売スケジュールにも耐える運用体制を実現した。",
-      en: "Launched as a site that carries visitors from research through reservation and checkout, with an operation setup that holds up during peak sales seasons.",
+      ja: "情報収集から予約・購入までを回遊できるサイトとして公開。繁忙期の過密な販売スケジュールや大量リクエストにも耐える堅牢な運用体制を実現した。形態はWebとして公開（◎）され、カタログ請求や店舗案内から決済にいたるまで、デザインの美しさと強固なバックエンドシステムが完全に連動したブランドサイトとして高い評価を得ています。",
+      en: "The system was successfully deployed as a live site allowing users to fluidly navigate from initial research to event booking and terminal purchases. We achieved a robust operational framework that withstands dense sales schedules and peak seasonal request volumes without a single drop in latency. Fulfilling all Web deployment conditions (◎), the final architecture operates as a premium brand ecosystem where breathtaking frontend visuals and enterprise-grade backend systems function in perfect harmony.",
     },
     stack: ["EC構築", "会員システム", "カタログ請求フォーム", "店舗・展示会管理"],
     metrics: [
@@ -435,15 +435,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "「山梨の暮らしをデザインする」という世界観を伝えながら、モデルハウス見学会や無料相談会の集客・予約をサイト上で完結させたかった。",
-      en: "The builder wanted to convey its \"designing life in Yamanashi\" worldview while handling model-house tours and free-consultation bookings entirely on the site.",
+      en: "While beautifully conveying the brand identity of "Designing the Lifestyle of Yamanashi," the client desired to centralize customer acquisition and reservation management for model house viewings and free consultation sessions entirely on the website.",
     },
     solution: {
-      ja: "大判ビジュアルによるブランド表現を軸に、イベント情報の更新・予約フォーム・完成見学会の告知を運用しやすいCMSとして構築。",
-      en: "Built around large-format brand visuals, with an easy-to-run CMS for event updates, reservation forms and model-house tour announcements.",
+      ja: "大判ビジュアルによるブランド表現を軸に、イベント情報の更新・予約フォーム・完成見学会の告知を運用しやすいCMSとして構築。管理画面から投稿されたイベントデータと、各予約フォームの受付上限枠（定員数）をバックエンド側で動的にバインド（紐付け）するロジックを設計。ユーザーがフォームを入力した際のリクエストをセキュアにバリデーション（整合性チェック）し、予約完了メールの自動配信システムや、データベース側での確実なイベント管理・ステータス更新処理を実装しました。",
+      en: "Centering on brand expression through large-format visuals, we constructed a highly manageable CMS for updating event information, reservation forms, and open-house announcements. We engineered a dynamic backend logic to securely bind event data submitted via the admin dashboard with the corresponding booking capacity constraints (maximum seats per slot). When a user submits a form, the request is securely validated to check data integrity, combined with an automated confirmation email delivery subsystem and strict event management/status update handling on the database layer.",
     },
     result: {
-      ja: "イベントごとに情報を差し替えられる集客基盤として公開。無料相談会予約への導線を明確化した。",
-      en: "Launched as a lead-generation base where each event's information can be swapped in, with a clear path to free-consultation bookings.",
+      ja: "イベントごとに情報を差し替えられる集客基盤としてWebサイトを公開。無料相談会予約への導線を明確化しました。エリア（Yamanashi）に特化した美しいデザインの世界観を完璧に維持したまま、複雑な見学会スケジュールにも柔軟に対応できる強固なCMS予約導線（◎）を確立しました。",
+      en: "The infrastructure was successfully deployed as a live marketing website allowing the client to swap and update information seamlessly for each event. The user flow directly leading to consultation bookings was successfully clarified. While perfectly preserving the stunning visual world tailored for the Yamanashi region, we established a resilient CMS-driven booking funnel (◎) capable of flexibly adapting to intricate exhibition schedules.",
     },
     stack: ["ブランドサイト", "イベントCMS", "予約フォーム", "レスポンシブ"],
     metrics: [
@@ -464,15 +464,15 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "初診のハードルが高い不妊治療において、患者が安心して来院できるよう、診療時間・治療内容・アクセスと予約をわかりやすく整理する必要があった。",
-      en: "In fertility care, where the first visit is daunting, the clinic needed hours, treatments, access and reservations organized clearly so patients could visit with confidence.",
+      en: "In infertility treatment, where the psychological barrier for a first-time visit is inherently high, it was essential to organize clinic hours, treatment/testing details, location access, and booking pathways clearly to ease patient anxiety before coming to the clinic.",
     },
     solution: {
-      ja: "落ち着いたトーンのデザインで、診療時間表・治療/検査の案内・Web予約・採用情報を動的に管理できる医療機関サイトを構築。",
-      en: "A calm, reassuring design with a medical-institution site that dynamically manages the hours table, treatment/exam guides, web reservations and recruitment.",
+      ja: "落ち着いたトーンのデザインで、診療時間表・治療/検査の案内・Web予約・採用情報を動的に管理できる医療機関サイトを構築。複雑に変動する外来シフトや検査スケジュールを管理画面から簡単に入力・反映できる動的CMS機能をバックエンドに実装。医療サイトとして必須となるSSL/TLS暗号化通信の最適化や、Web予約フォームにおけるプライバシー情報の隔離保護ロジックを設計し、デザインの安心感とシステムの安全性（◎）を完璧にドッキングさせました。",
+      en: "Adopting a calming and reassuring design tone, we constructed a comprehensive medical institution website capable of dynamically managing clinical schedules, treatment/test guidelines, web reservations, and recruitment updates. We engineered a dynamic CMS on the backend, allowing staff to easily update and display fluctuating outpatient shifts and examination timelines via the admin dashboard. Optimizing secure SSL/TLS encrypted communications—mandatory for healthcare platforms—and designing privacy-data isolation logic for the web reservation forms, we perfectly docked emotional visual comfort with high-level system compliance (◎).",
     },
     result: {
-      ja: "予約・診療案内・採用までを1サイトに集約し、来院前の不安を軽減する情報導線を実現した。",
-      en: "Consolidated reservations, treatment guidance and recruitment into one site, easing patients' pre-visit anxiety.",
+      ja: "予約・診療案内・採用までを1サイトに集約し、来院前の不安を軽減する情報導線を実現した。4市対応エリアをはじめ、駅から「2min」というアクセスの良さを伝えるビジュアルと連動した、機会損失のないセキュアなWeb予約・診療インフラの安定稼働を確立しました。",
+      en: "Reservations, clinical overviews, and hiring modules were successfully consolidated into a single site, realizing a fluid information architecture that alleviates patient anxiety prior to their visit. Fully integrated with visuals showcasing its location just 2 min from the station to serve the 4-city target coverage area, we established a highly stable, secure Web-based scheduling and medical guidance infrastructure.",
     },
     stack: ["クリニックサイト", "Web予約", "診療案内", "採用情報", "レスポンシブ"],
     metrics: [
