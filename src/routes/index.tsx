@@ -27,7 +27,7 @@ function HomePage() {
           </Reveal>
           <Reveal as="p" delay={180} className="mt-8 max-w-2xl text-base leading-[1.8] text-muted-foreground md:text-lg">
             {t({
-              ja: "DreamCha（ドリームチャ）は、皆様のデザインを、強固なシステムインフラと高度なUI実装で形にする開発パートナーチームです。技術商談の窓口からバグの保証まで、裏側をトータルで引き受けます。",
+              ja: "DreamCha（ドリームチャ）は、皆様のデザインを、強固なシステムインフラと堅牢なバックエンド実装で形にする開発パートナーチームです。技術商談の窓口からバグの保証まで、裏側をトータルで引き受けます。",
               en: "DreamCha turns your design into reality with robust system infrastructure and advanced UI implementation. From technical negotiation to bug guarantees, we handle the backend end to end.",
             })}
           </Reveal>
@@ -94,7 +94,7 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <Reveal><SectionLabel index="03">{t({ ja: "サービス内容", en: "Services" })}</SectionLabel></Reveal>
         <Reveal as="h2" delay={80} className="mt-6 max-w-4xl font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "皆様のデザインを、強固なシステムインフラと高度なUI実装で形にする", en: "Turning your design into reality with robust system infrastructure and advanced UI implementation" })}
+          {t({ ja: "皆様のデザインを、強固なシステムインフラと堅牢なバックエンド実装で形にする", en: "Turning your design into reality with robust system infrastructure and advanced UI implementation" })}
         </Reveal>
         <Reveal as="p" delay={140} className="mt-6 max-w-3xl text-base leading-[1.8] text-muted-foreground">
           {t({
