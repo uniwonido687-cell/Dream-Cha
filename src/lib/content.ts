@@ -297,7 +297,7 @@ export const caseStudies: CaseStudy[] = [
     },
     result: {
       ja: "納品後のバグは一切なく、クライアントも大満足。継続課金型の物販ECを安定稼働で納品できました。Stripe決済に起因するエラーや納品後バグは「0」を記録し、ブランドの信頼を揺るがさない堅牢なサブスクリプションEC基盤を確立しました。",
-      en: "There were absolutely zero post-delivery bugs, and the client was highly satisfied. We successfully delivered a recurring-billing-based product e-commerce system running on highly stable operations. Post-delivery bugs stemming from Stripe transactions remained at absolute "0", establishing a rock-solid subscription e-commerce infrastructure that protects the brand’s integrity.",
+      en: "There were absolutely zero post-delivery bugs, and the client was highly satisfied. We successfully delivered a recurring-billing-based product e-commerce system running on highly stable operations. Post-delivery bugs stemming from Stripe transactions remained at absolute 0, establishing a rock-solid subscription e-commerce infrastructure that protects the brand’s integrity.",
     },
     stack: ["Stripe Billing", "Node.js", "EC", "PostgreSQL"],
     metrics: [
@@ -435,7 +435,7 @@ export const caseStudies: CaseStudy[] = [
     },
     before: {
       ja: "「山梨の暮らしをデザインする」という世界観を伝えながら、モデルハウス見学会や無料相談会の集客・予約をサイト上で完結させたかった。",
-      en: "While beautifully conveying the brand identity of "Designing the Lifestyle of Yamanashi," the client desired to centralize customer acquisition and reservation management for model house viewings and free consultation sessions entirely on the website.",
+      en: "While beautifully conveying the brand identity of Designing the Lifestyle of Yamanashi, the client desired to centralize customer acquisition and reservation management for model house viewings and free consultation sessions entirely on the website.",
     },
     solution: {
       ja: "大判ビジュアルによるブランド表現を軸に、イベント情報の更新・予約フォーム・完成見学会の告知を運用しやすいCMSとして構築。管理画面から投稿されたイベントデータと、各予約フォームの受付上限枠（定員数）をバックエンド側で動的にバインド（紐付け）するロジックを設計。ユーザーがフォームを入力した際のリクエストをセキュアにバリデーション（整合性チェック）し、予約完了メールの自動配信システムや、データベース側での確実なイベント管理・ステータス更新処理を実装しました。",
