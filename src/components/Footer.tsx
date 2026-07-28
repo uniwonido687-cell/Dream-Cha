@@ -39,7 +39,7 @@ export function Footer() {
             })}
           </p>
           <a
-            href="https://lin.ee/ncRMNzs"
+            href="https://line.me/ti/p/MPrAYupYLn"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5 inline-flex items-center gap-2 rounded-sm bg-[#06C755] px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
