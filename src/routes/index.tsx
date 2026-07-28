@@ -122,8 +122,8 @@ function HomePage() {
                 en: "Full implementation of complex system requirements",
               },
               body: {
-                ja: "クライアントから求められるStripeなどの外部決済API連携、会員マイページ機能、複雑なデータベース（DB）構築、大規模ECサイト、強固なセキュリティ実装など、デザイナー様が一人で抱えるにはリスクの高すぎる重層的なバックエンド開発を、4名のバックエンドエンジニア陣が完璧に形にします。",
-                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC, robust security—the layered backend work that's too risky for a designer to carry alone is handled perfectly by our four backend engineers.",
+                ja: "クライアントから求められるStripeなどの外部決済API連携、会員マイページ機能、複雑なデータベース（DB）構築、大規模ECサイト、強固なセキュリティ実装など、デザイナー様が一人で抱えるにはリスクの高すぎる重層的なバックエンド開発を、チームのバックエンドエンジニア陣が完璧に形にします。",
+                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC, robust security—the layered backend work that's too risky for a designer to carry alone is handled perfectly by backend engineers of our team.",
               },
             },
             {
