@@ -271,7 +271,7 @@ function HomePage() {
           </p>
           <div className="mt-8 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
             <a
-              href="https://line.me/ti/p/MPrAYupYLn"
+              href="https://lin.ee/ncRMNzs"
               target="_blank"
               rel="noopener noreferrer"
               className="group/cta inline-flex items-center gap-2 rounded-sm bg-[#06C755] px-8 py-4 text-base font-medium text-white shadow-lg shadow-[#06C755]/20 transition-opacity hover:opacity-90"
