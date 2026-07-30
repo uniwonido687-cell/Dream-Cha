@@ -34,8 +34,8 @@ export function Footer() {
           />
           <p className="mt-4 max-w-sm text-sm leading-[1.8] text-muted-foreground">
             {t({
-              ja: "皆様のデザインを、強固なシステムインフラと堅牢なバックエンド実装で形にする。デザイナーのための開発パートナーチームです。",
-              en: "Turning your design into reality with robust system infrastructure. A development partner team for designers.",
+              ja: "皆様のデザイン実務には1ミリも介入しません。強固なシステムインフラと堅牢なバックエンド実装で、あなたのデザイン世界観を完璧に形にするパートナーです。",
+              en: "We never interfere with your design execution. We turn your beautiful creative vision into reality with robust system infrastructure and backend engineering.",
             })}
           </p>
           <a

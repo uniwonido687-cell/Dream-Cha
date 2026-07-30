@@ -182,8 +182,8 @@ export const team: Member[] = [
     tone: "oklch(0.62 0.12 340 / 0.28)",
     name: { ja: "佐藤 結衣", en: "Yui Sato" },
     role: {
-      ja: "UI/UXデザイナー",
-      en: "UI/UX Designer",
+      ja: "デザインコミュニケーター / クリエイティブ通訳",
+      en: "Design Communicator / Creative Translator",
     },
     location: { ja: "経験年数", en: "Years of experience" },
     eYears: { ja: "9年", en: "9 Years" },
@@ -195,12 +195,12 @@ export const team: Member[] = [
     ],
     photo: "/members/sato-chiki.jpg",
     bio: {
-      ja: "大手制作代理店で、有名ブランドのWebサイトやiOS・AndroidアプリのUI/UXデザインに6年間従事。認知心理に基づく迷いにくい画面設計と、再利用性の高いFigmaコンポーネントの構築を得意とし、デザインから実装への円滑な受け渡しを支えます。",
-      en: "A UI/UX designer with six years of experience creating websites and mobile applications for well-known brands at a major agency. She specialises in cognition-based interface design, reusable Figma components, and smooth handoffs from design to engineering.",
+      ja: "大手制作代理店で有名ブランドのWebサイトやアプリのUI/UX設計を経験。DreamChaでは自社でのデザイン実務には介入せず、外部の提携デザイナー様が制作されたFigmaやSTUDIOの『意図や世界観』を100%正確に理解し、社内のエンジニア陣が実装時にデザインを1ミリも崩さないよう翻訳・橋渡しを行う専門ディレクター。",
+      en: "Experienced in UI/UX design for major brands at agencies. At DreamCha, she never handles design execution directly. Instead, she perfectly interprets external designers' Figma/STUDIO visual intents and translates them into exact engineering specifications to prevent any layout.",
     },
     quote: {
-      ja: "デザインの品質を守りながら、エンジニアが正確に実装できる設計を整えます。デザインと技術が対等に協力できるチームを目指します。",
-      en: "I protect design quality while preparing structures engineers can implement accurately. Design and technology should work together as equals.",
+      ja: "皆様のクリエイティブを1ミリも崩さずシステムへ結合します。社内エンジニアへの『デザインの翻訳』は私にお任せください。",
+      en: "I ensure your creative vision is merged into the system without losing a single pixel. Leave the technical translation to me.",
     },
   },
   {
@@ -224,11 +224,11 @@ export const team: Member[] = [
     ],
     photo: "/members/kato.png",
     bio: {
-      ja: "自身が開発したシステムのUI/UX改善をDreamChaのデザイナーに依頼した経験から、デザインがサービスの価値を大きく高めることを実感し、チームに参画。デザインへの深い敬意を持ち、デザイナーが技術的な制約にとらわれず、創造性に集中できる開発環境を形にします。",
-      en: "After seeing how DreamCha's designer transformed the UI/UX of his own system, he gained a deep appreciation for the value of design and joined the team. He creates development environments where designers can focus on creativity without being constrained by technical barriers.",
+      ja: "自身が開発したシステムのUI/UX改善を、外部のプロのウェブデザイナーに依頼した際、『デザインの力がシステムの価値をここまで跳ね上げるのか』と猛烈に感動してチームに参画。デザインへの深いリスペクトを胸に、デザイナーが技術の壁に怯えず、100%クリエイティブに集中できる強固な環境をバックエンドから構築するスペシャリスト。",
+      en: "Joined the team after seeing an external professional designer transform his system's UI/UX, sparking a deep appreciation for design value. Dedicated to building powerful backend environments where designers can focus entirely on creativity without technical worries.",
     },
     quote: {
-      ja: "デザインへの敬意を忘れず、技術的な制約を裏側から解消します。デザイナーが創造性に集中できる環境を形にします。",
+      ja: "デザインへの敬意を忘れず、技術的な制約を裏側から解消します。皆様が創造性に集中できる土台を形にします。",
       en: "With deep respect for design, I remove technical barriers behind the scenes so designers can focus fully on creativity.",
     },
   },
