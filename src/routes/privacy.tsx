@@ -3,8 +3,7 @@ import { useLang } from "@/lib/i18n";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
 
-// as any を付与することで、ルーターの自動生成ファイルの状況に依存せず、型警告を100%強制消滅させます
-export const Route = createFileRoute("/privacy" as any)({
+export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
       { title: "Privacy Policy — Dream-cha | プライバシーポリシー" },

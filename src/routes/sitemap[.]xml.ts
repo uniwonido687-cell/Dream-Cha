@@ -4,6 +4,7 @@ import type {} from "@tanstack/react-start";
 const BASE_URL = "";
 
 export const Route = createFileRoute("/sitemap.xml")({
+  component: () => null,
   server: {
     handlers: {
       GET: async () => {
