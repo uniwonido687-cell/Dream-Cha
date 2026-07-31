@@ -249,8 +249,14 @@ function ContactPage() {
                 </label>
               </div>
 
-              <div className="mt-12 space-y-6 border-t border-border pt-8">
-                {/* 注記・規約エリア（縦に美しく整列・左寄せ） */}
+              {error && (
+                <p className="text-sm text-red-500">
+                  {t({ ja: "送信に失敗しました。時間をおいて再度お試しください。", en: "Failed to send. Please try again later." })}
+                </p>
+              )}
+
+              <div className="mt-12 flex flex-col md:flex-row md:items-end justify-between gap-6 border-t border-border pt-8">
+                {/* 左側：注記・規約エリア（縦にコンパクトに整列） */}
                 <div className="space-y-2 text-left max-w-xl">
                   <p className="text-xs text-muted-foreground/80 tracking-wide">
                     {t({
@@ -282,8 +288,8 @@ function ContactPage() {
                   </p>
                 </div>
 
-                {/* ボタンエリア（右寄せで独立配置し、動線を完結） */}
-                <div className="flex justify-end pt-2">
+                {/* 右側：ボタンエリア（テキストの右横・下揃えにピタッと配置） */}
+                <div className="flex justify-end shrink-0">
                   <button
                     type="submit"
                     disabled={sending}
@@ -295,7 +301,9 @@ function ContactPage() {
                       <>{t({ ja: "テクニカル相談を申し込む", en: "Request a technical consult" })} <ArrowUpRight size={15} className="cta-arrow" /></>
                     )}
                   </button>
-                </div></div>
+                </div>
+              </div>
+
 
               {/* LINE CTA */}
               <div className="rounded-sm border border-[#06C755]/30 bg-[#06C755]/5 px-6 py-5">
