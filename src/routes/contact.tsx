@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { useState, useRef } from "react";
 import { ArrowUpRight, Check, Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import { Link } from "@tanstack/react-router";
 
 const EMAILJS_SERVICE_ID = "service_kw8u2fl";
 const EMAILJS_TEMPLATE_ID = "template_8ptt4yw";
@@ -201,8 +202,8 @@ function ContactPage() {
                       type="button"
                       onClick={() => setOccupation((prev) => (prev === o.value ? null : o.value))}
                       className={`rounded-sm border px-4 py-3 text-left text-sm transition-colors ${occupation === o.value
-                          ? "border-[var(--dreamblue)] bg-[var(--dreamblue)]/10 text-foreground"
-                          : "border-border text-muted-foreground hover:border-foreground/40"
+                        ? "border-[var(--dreamblue)] bg-[var(--dreamblue)]/10 text-foreground"
+                        : "border-border text-muted-foreground hover:border-foreground/40"
                         }`}
                     >
                       {lang === "ja" ? o.ja : o.en}
@@ -223,8 +224,8 @@ function ContactPage() {
                       type="button"
                       onClick={() => setSituation((prev) => (prev === s.value ? null : s.value))}
                       className={`w-full rounded-sm border px-4 py-3 text-left text-sm transition-colors ${situation === s.value
-                          ? "border-[var(--dreamblue)] bg-[var(--dreamblue)]/10 text-foreground"
-                          : "border-border text-muted-foreground hover:border-foreground/40"
+                        ? "border-[var(--dreamblue)] bg-[var(--dreamblue)]/10 text-foreground"
+                        : "border-border text-muted-foreground hover:border-foreground/40"
                         }`}
                     >
                       {lang === "ja" ? s.ja : s.en}
@@ -258,6 +259,29 @@ function ContactPage() {
                 <p className="text-xs text-muted-foreground">
                   {t({ ja: "送信内容は Dream-cha メンバーのみが確認します。", en: "Only Dream-cha team members will see your message." })}
                 </p>
+                <p className="mt-6 text-center text-xs text-muted-foreground leading-relaxed">
+                  {t({
+                    ja: (
+                      <>
+                        {"送信を完了することで、弊社の"}
+                        <a href="/privacy" className="underline text-foreground hover:text-muted-foreground transition-colors" target="_blank">
+                          {"プライバシーポリシー"}
+                        </a>
+                        {"に同意したものとみなされます。"}
+                      </>
+                    ),
+                    en: (
+                      <>
+                        {"By submitting, you agree to our "}
+                        <a href="/privacy" className="underline text-foreground hover:text-muted-foreground transition-colors" target="_blank">
+                          {"Privacy Policy"}
+                        </a>
+                        {"."}
+                      </>
+                    ),
+                  })}
+                </p>
+
                 <button
                   type="submit"
                   disabled={sending}

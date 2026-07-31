@@ -11,15 +11,15 @@ export function Footer() {
     const updateTheme = () => {
       setIsDark(document.documentElement.classList.contains("dark"));
     };
-    
+
     updateTheme();
-    
+
     const observer = new MutationObserver(updateTheme);
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["class"],
     });
-    
+
     return () => observer.disconnect();
   }, []);
 
@@ -56,6 +56,7 @@ export function Footer() {
             <li><Link to="/blog" className="text-muted-foreground hover:text-foreground">{t({ ja: "お客様の声", en: "Stories" })}</Link></li>
             <li><Link to="/recruit" className="text-muted-foreground hover:text-foreground">{t({ ja: "採用情報", en: "Careers" })}</Link></li>
             <li><Link to="/security" className="text-muted-foreground hover:text-foreground">{t({ ja: "開発規約", en: "Policy" })}</Link></li>
+            <li><Link to={"/privacy" as any} className="text-muted-foreground hover:text-foreground">{t({ ja: "プライバシーポリシー", en: "Privacy" })}</Link></li>
             <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">{t({ ja: "無料相談", en: "Contact" })}</Link></li>
           </ul>
         </div>
