@@ -249,51 +249,53 @@ function ContactPage() {
                 </label>
               </div>
 
-              {error && (
-                <p className="text-sm text-red-500">
-                  {t({ ja: "送信に失敗しました。時間をおいて再度お試しください。", en: "Failed to send. Please try again later." })}
-                </p>
-              )}
+              <div className="mt-12 space-y-6 border-t border-border pt-8">
+                {/* 注記・規約エリア（縦に美しく整列・左寄せ） */}
+                <div className="space-y-2 text-left max-w-xl">
+                  <p className="text-xs text-muted-foreground/80 tracking-wide">
+                    {t({
+                      ja: "送信内容は Dream-cha メンバーのみが確認します。",
+                      en: "Only Dream-cha team members will see your message."
+                    })}
+                  </p>
+                  <p className="text-[11px] leading-relaxed text-muted-foreground/60 tracking-wider">
+                    {t({
+                      ja: (
+                        <>
+                          {"送信を完了することで、弊社の "}
+                          <a href="/privacy" className="underline text-foreground hover:text-muted-foreground/80 transition-colors" target="_blank">
+                            {"プライバシーポリシー"}
+                          </a>
+                          {" に同意したものとみなされます。"}
+                        </>
+                      ),
+                      en: (
+                        <>
+                          {"By submitting, you agree to our "}
+                          <a href="/privacy" className="underline text-foreground hover:text-muted-foreground/80 transition-colors" target="_blank">
+                            {"Privacy Policy"}
+                          </a>
+                          {"."}
+                        </>
+                      ),
+                    })}
+                  </p>
+                </div>
 
-              <div className="flex items-center justify-between border-t border-border pt-6">
-                <p className="text-xs text-muted-foreground">
-                  {t({ ja: "送信内容は Dream-cha メンバーのみが確認します。", en: "Only Dream-cha team members will see your message." })}
-                </p>
-                <p className="mt-6 text-center text-xs text-muted-foreground leading-relaxed">
-                  {t({
-                    ja: (
-                      <>
-                        {"送信を完了することで、弊社の"}
-                        <a href="/privacy" className="underline text-foreground hover:text-muted-foreground transition-colors" target="_blank">
-                          {"プライバシーポリシー"}
-                        </a>
-                        {"に同意したものとみなされます。"}
-                      </>
-                    ),
-                    en: (
-                      <>
-                        {"By submitting, you agree to our "}
-                        <a href="/privacy" className="underline text-foreground hover:text-muted-foreground transition-colors" target="_blank">
-                          {"Privacy Policy"}
-                        </a>
-                        {"."}
-                      </>
-                    ),
-                  })}
-                </p>
-
-                <button
-                  type="submit"
-                  disabled={sending}
-                  className="group/cta inline-flex items-center gap-2 rounded-sm bg-[var(--dreamblue)] px-7 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-40"
-                >
-                  {sending ? (
-                    <><Loader2 size={15} className="animate-spin" /> {t({ ja: "送信中…", en: "Sending…" })}</>
-                  ) : (
-                    <>{t({ ja: "テクニカル相談を申し込む", en: "Request a technical consult" })} <ArrowUpRight size={15} className="cta-arrow" /></>
-                  )}
-                </button>
-              </div>
+                {/* ボタンエリア（右寄せで独立配置し、動線を完結） */}
+                <div className="flex justify-end pt-2">
+                  <button
+                    type="submit"
+                    disabled={sending}
+                    className="group/cta inline-flex items-center gap-2 rounded-sm bg-[var(--dreamblue)] px-8 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-40"
+                  >
+                    {sending ? (
+                      <><Loader2 size={15} className="animate-spin" /> {t({ ja: "送信中…", en: "Sending…" })}</>
+                    ) : (
+                      <>{t({ ja: "テクニカル相談を申し込む", en: "Request a technical consult" })} <ArrowUpRight size={15} className="cta-arrow" /></>
+                    )}
+                  </button>
+                </div></div>
 
               {/* LINE CTA */}
               <div className="rounded-sm border border-[#06C755]/30 bg-[#06C755]/5 px-6 py-5">
