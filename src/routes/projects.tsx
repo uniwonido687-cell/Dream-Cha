@@ -3,7 +3,7 @@ import { useLang } from "@/lib/i18n";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
 import { caseStudies, type CaseStudy, type Bi } from "@/lib/content";
-import { ArrowUpRight, Plus, Loader2 } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/projects")({
@@ -24,11 +24,28 @@ function ProjectsPage() {
 
   return (
     <>
-      {/* Header */}
+      {/* Hero */}
+      <section className="hero-bg mx-auto max-w-7xl px-6 pb-16 pt-20 md:px-10 md:pb-24 md:pt-28">
+        <Reveal><SectionLabel index="01">Projects</SectionLabel></Reveal>
+        <Reveal as="h1" delay={80} className="mt-8 hero-title">
+          {t({
+            ja: <>Before / After の数字で語る</>,
+            en: <>Speaking through Before / After metrics.</>,
+          })}
+        </Reveal>
+        <Reveal as="p" delay={140} className="mt-6 max-w-2xl text-base leading-[1.8] text-muted-foreground">
+          {t({
+            ja: "きらびやかな宣伝文句は置き、技術構成と成果数値だけを淡々と並べます。詳細な資料はご相談時にお渡しできます。",
+            en: "Leaving flashy buzzwords aside, we plainly present our technical stacks and performance metrics. Detailed case resources are available upon consultation.",
+          })}
+        </Reveal>
+      </section>
+
+      {/* 境界線 */}
       <div className="hairline mx-auto max-w-7xl" />
 
-      {/* Revenue model explainer */}
-      <section className="bg-[#F5F5F7] dark:bg-secondary/40 py-16 md:py-20">
+      {/* 成果報酬の仕組みセクション（本来の背景コントラストを完全維持） */}
+      <section className="bg-[#F5F5F7] dark:bg-secondary/40 py-16 md:py-20 border-b border-border/40">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <Reveal>
             <SectionLabel index="02">
@@ -75,14 +92,14 @@ function ProjectsPage() {
         </div>
       </section>
 
-      {/* Case studies (Accordion Layout) */}
+      {/* 解決事例セクション（アコーディオンレイアウト） */}
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <Reveal>
           <SectionLabel index="03">
             {t({ ja: "解決事例", en: "Case Studies" })}
           </SectionLabel>
         </Reveal>
-        
+
         <div className="mt-12 divide-y divide-border/40 border-t border-b border-border/40">
           {caseStudies.map((c, i) => (
             <AccordionItem key={c.id} c={c} i={i} t={t} />
@@ -143,13 +160,13 @@ function AccordionItem({ c, i, t }: { c: CaseStudy; i: number; t: (bi: Bi) => st
           すべての実績アイテム間で1ミリの狂いもなく縦一直線にカチッと整列させます。
         */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-4 min-w-0 flex-1 items-start md:items-center">
-          
+
           {/* 1. 日付エリア（12カラム中、1カラムを割り当てて縦軸を固定） */}
           <div className="font-mono text-xs text-muted-foreground/60 shrink-0 md:col-span-1">
             {c.year}
           </div>
 
-          {/* 2. カテゴリ分類エリア（12カラム中、3カラムを贅沢に割り当てて縦の幅を統一） */}
+          {/* 2. カテゴが分類エリア（12カラム中、3カラムを贅沢に割り当てて縦の幅を統一） */}
           <div className="flex items-center gap-3 md:col-span-3 shrink-0">
             <span className="hidden md:inline h-px w-3 bg-border" />
             <span className="text-[var(--dreamblue)] font-sans text-xs tracking-wide truncate">
@@ -172,9 +189,8 @@ function AccordionItem({ c, i, t }: { c: CaseStudy; i: number; t: (bi: Bi) => st
 
       {/* スムーズ開閉コンテナ（CSS Gridによるハイクオリティな開閉演出） */}
       <div
-        className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? "grid-rows-[1fr] opacity-100 mt-8" : "grid-rows-[0fr] opacity-0"
-        }`}
+        className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 mt-8" : "grid-rows-[0fr] opacity-0"
+          }`}
       >
         <div className="overflow-hidden">
           {/* 
@@ -183,7 +199,7 @@ function AccordionItem({ c, i, t }: { c: CaseStudy; i: number; t: (bi: Bi) => st
             スマホ画面では自動的に綺麗な「画像 → テキスト」の縦一直線にリサイズされます。
           */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:pl-8 items-start">
-            
+
             {/* 左側（md:col-span-4）：実績画像 ＆ 技術バッジ */}
             <div className="min-w-0 md:col-span-4">
               <div className="overflow-hidden rounded-sm border border-border bg-muted/20 shadow-sm">
@@ -203,8 +219,8 @@ function AccordionItem({ c, i, t }: { c: CaseStudy; i: number; t: (bi: Bi) => st
                   </div>
                 )}
               </div>
-              
-              {/* 技術スタック（白黒モノトーン化して画像を引き立たせます） */}
+
+              {/* 技術スタック */}
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {c.stack.map((tech) => (
                   <span
@@ -219,7 +235,7 @@ function AccordionItem({ c, i, t }: { c: CaseStudy; i: number; t: (bi: Bi) => st
 
             {/* 右側（md:col-span-8）：3大テキスト（上揃え） ＆ 指標 */}
             <div className="min-w-0 md:col-span-8 space-y-6">
-              
+
               {/* 
                 【横軸・文字の高さズレ完全解消】 
                 items-start を指定し、3つのカラムの上端ラインを1ミリの狂いもなく一直線に揃えます。
