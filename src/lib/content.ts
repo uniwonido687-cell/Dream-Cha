@@ -148,10 +148,10 @@ export const team: Member[] = [
     },
   },
   {
-    id: "hasegawa",
+    id: "Nakajima",
     initials: "H",
     tone: "oklch(0.55 0.15 250 / 0.28)",
-    name: { ja: "長谷川 紀夫", en: "Norio Hasegawa" },
+    name: { ja: "中島 拓海", en: "Takumi Nakajima" },
     role: {
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
@@ -166,7 +166,7 @@ export const team: Member[] = [
       "Stripe",
       "LINE Login",
     ],
-    photo: "/members/hasegawa.jpg",
+    photo: "/members/Nakajima.jpg",
     bio: {
       ja: "フロントエンドとバックエンドの両方を一貫して担当できる、機動力の高いフルスタックエンジニア。Stripeによる決済機能やLINE・Googleなどの認証機能を素早く実装し、デザイナーの細かな画面要件に合わせて裏側の処理を柔軟に調整します。",
       en: "A highly adaptable full-stack engineer capable of handling both frontend and backend development. He rapidly implements Stripe payments and social authentication while adjusting backend behaviour to match detailed interface requirements.",
