@@ -265,8 +265,8 @@ function HomePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-[1.8] text-muted-foreground md:text-base">
             {t({
-              ja: "技術的なご質問や概算のお見積もりは、LINE公式アカウントへお気軽に。要件定義書やFigmaデータを添えた詳しいご相談は、お問い合わせフォームからどうぞ。",
-              en: "For quick technical questions or a rough estimate, use our LINE Official Account. For a detailed discussion with your requirements docs or Figma data, use the contact form.",
+              ja: "技術的なご質問や概算のお見積もりは、LINE公式アカウントへお気軽に。要件定義書やFigmaデータを添えた詳しいご相談は、お問い合わせフォームからどうぞ。ご相談・お見積もりは無料です「システム要件の仕様が合っているか不安」「予算20万円からのスポット開発をお願いしたい」など、どんな段階でもお気軽にご連絡ください。",
+              en: "For quick technical questions or a rough estimate, use our LINE Official Account. For a detailed discussion with your requirements docs or Figma data, use the contact form. Unsure if your system requirements are accurate? Looking for a spot development partner starting from 200,000 JPY? No matter what stage your project is in, please feel free to reach out to us at any time.",
             })}
           </p>
           <div className="mt-8 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
