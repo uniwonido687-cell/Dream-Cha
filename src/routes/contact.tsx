@@ -116,8 +116,8 @@ function ContactPage() {
           </Reveal>
           <Reveal as="p" delay={160} className="mx-auto mt-6 max-w-2xl text-base leading-[1.8] text-muted-foreground">
             {t({
-              ja: "要件定義書・仕様書・Figmaデータなどの資料を共有して、すぐに具体的な相談を進めたい方は、こちらのお問い合わせフォームからご連絡ください。システム要件の策定から技術的な仕様まで、詳細をお伺いした上で最適なご提案をいたします。",
-              en: "If you'd like to share materials — requirements docs, specs, Figma data — and move straight into a detailed discussion, use this contact form. We'll review everything and propose the best path, from defining system requirements to technical specs.",
+              ja: "ご相談・お見積もりは無料です「システム要件の仕様が合っているか不安」「予算20万円からのスポット開発をお願いしたい」など、どんな段階でもお気軽にご連絡ください。",
+              en: "Unsure if your system requirements are accurate? Looking for a spot development partner starting from 200,000 JPY? No matter what stage your project is in, please feel free to reach out to us at any time.",
             })}
           </Reveal>
           <Reveal delay={240} className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#06C755]/40 bg-[#06C755]/10 px-5 py-2.5 text-sm text-[#06C755]">
