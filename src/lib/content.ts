@@ -19,9 +19,9 @@ export type Member = {
 export const team: Member[] = [
   {
     id: "leader",
-    initials: "S",
+    initials: "M",
     tone: "oklch(0.55 0.16 250 / 0.28)",
-    name: { ja: "鈴木 雄平", en: "Suzuki Yuhei" },
+    name: { ja: "村上 豪", en: "Go Murakami" },
     role: {
       ja: "チームリーダー / テクニカルディレクター",
       en: "Team Leader / Technical Director",
@@ -29,7 +29,7 @@ export const team: Member[] = [
     location: { ja: "経験年数", en: "6 years" },
     eYears: { ja: "6年", en: "Years of experience" },
     skills: ["Go", "Python / FastAPI", "AWS", "Docker", "DB設計", "要件定義"],
-    photo: "/members/suzuki.jpg",
+    photo: "/members/murakami.png",
     bio: {
       ja: "現役のシニアバックエンドエンジニアとして、DreamChaの開発全体を率いる技術責任者。大規模データベースの最適化やミッションクリティカルなインフラ構築の経験を基に、FigmaやSTUDIOの設計意図を正確に読み取り、API連携や決済機能を安定して運用するための技術設計とディレクションを統括します。",
       en: "An active senior backend engineer and the technical lead overseeing DreamCha's development. Drawing on extensive experience in large-scale database optimisation and mission-critical infrastructure, he translates Figma and STUDIO designs into robust architecture for stable API integrations and payment systems.",
@@ -70,30 +70,31 @@ export const team: Member[] = [
   },
   {
     id: "yamazaki",
-    initials: "Y",
+    initials: "SY",
     tone: "oklch(0.52 0.15 200 / 0.28)",
-    name: { ja: "山崎 太陽", en: "Taiyo Yamazaki" },
+    name: { ja: "佐藤 大和", en: "Sato Yamato" },
     role: {
-      ja: "バックエンドエンジニア",
-      en: "Backend Engineer",
+      ja: "ブロックチェーンインフラエンジニア",
+      en: "Blockchain Infrastructure Engineer",
     },
     location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "5年", en: "5 Years" },
+    eYears: { ja: "10年以上", en: "10+ years" },
     skills: [
-      "Stripe API",
-      "決済API連携",
-      "セキュリティ",
-      "Node.js",
-      "PostgreSQL",
+      "Solidity",
+      "Rust",
+      "Go",
+      "TypeScript",
+      "DeFi",
+      "Cross-Chain",
     ],
-    photo: "/members/yamazaki-taiyo.png",
+    photo: "/members/SatoYamato.png",
     bio: {
-      ja: "Stripeをはじめとする外部決済APIの組み込みと、セキュリティ要件の設計を専門とするバックエンドエンジニア。金銭や重要な顧客情報を扱うシステムに対して、正確性と安全性を重視した堅牢な実装を提供します。",
-      en: "A backend engineer specialising in external payment API integrations such as Stripe and the design of secure system requirements. He delivers robust implementations focused on accuracy and safety for systems handling payments and sensitive customer data.",
+      ja: "DeFiプロトコルとクロスチェーンインフラの設計を専門とするブロックチェーンエンジニア。スマートコントラクトや分散型システムの構築を通じて、高負荷にも耐えるセキュアなWeb3基盤を実装し、複雑な金融システムを安定稼働へ導きます。",
+      en: "A blockchain engineer specializing in DeFi protocol design and cross-chain infrastructure. Through smart contract and distributed system development, he implements secure Web3 foundations that withstand high traffic and guides complex financial systems toward stable operation.",
     },
     quote: {
-      ja: "決済を扱うシステムだからこそ、正確性と安全性を何より大切にします。決済連携とセキュリティ設計は私にお任せください。",
-      en: "Payment systems demand accuracy and security above all else. Leave payment integrations and security design to me.",
+      ja: "ブロックチェーンの技術的な制約を裏側から解消し、Web3の世界でも安心して動き続けるシステム基盤を構築します。",
+      en: "I resolve blockchain's technical constraints from the backend, building system foundations that operate reliably in the Web3 world.",
     },
   },
   {
