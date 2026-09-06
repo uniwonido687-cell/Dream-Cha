@@ -21,7 +21,7 @@ export const team: Member[] = [
     id: "leader",
     initials: "M",
     tone: "oklch(0.55 0.16 250 / 0.28)",
-    name: { ja: "村上 豪", en: "Go Murakami" },
+    name: { ja: "50K", en: "50K" },
     role: {
       ja: "チームリーダー / テクニカルディレクター",
       en: "Team Leader / Technical Director",
