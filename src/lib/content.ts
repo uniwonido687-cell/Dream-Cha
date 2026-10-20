@@ -23,12 +23,12 @@ export const team: Member[] = [
     tone: "oklch(0.55 0.16 250 / 0.28)",
     name: { ja: "50K", en: "50K" },
     role: {
-      ja: "チームリーダー / テクニカルディレクター",
-      en: "Team Leader / Technical Director",
+      ja: "バックエンドエンジニア / テクニカルディレクター",
+      en: "Backend Engineer / Technical Director",
     },
-    location: { ja: "経験年数", en: "6 years" },
-    eYears: { ja: "6年", en: "Years of experience" },
-    skills: ["Go", "Python / FastAPI", "AWS", "Docker", "DB設計", "要件定義"],
+    location: { ja: "経験年数", en: "8 years" },
+    eYears: { ja: "8年", en: "Years of experience" },
+    skills: ["Go","Java", "TypeScript / FastAPI", "AWS", "Docker", "DB設計", "要件定義"],
     photo: "/members/murakami.png",
     bio: {
       ja: "現役のシニアバックエンドエンジニアとして、DreamChaの開発全体を率いる技術責任者。大規模データベースの最適化やミッションクリティカルなインフラ構築の経験を基に、FigmaやSTUDIOの設計意図を正確に読み取り、API連携や決済機能を安定して運用するための技術設計とディレクションを統括します。",
