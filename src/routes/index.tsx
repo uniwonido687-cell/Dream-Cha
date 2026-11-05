@@ -21,14 +21,14 @@ function HomePage() {
           <Reveal><SectionLabel index="01">Dream-cha · ドリームチャ</SectionLabel></Reveal>
           <Reveal as="h1" delay={80} className="mt-8 hero-title">
             {t({
-              ja: <>デザインはできる<br />でも、システムが組めないから、<br />その高単価案件を諦めますか？</>,
-              en: <>Great design, zero backend fear.<br />We are your complete tech partner.</>,
+              ja: <>バックエンドとAIを核に、<br />開発を丸ごと担う技術パートナー</>,
+              en: <>Backend & AI at the core.<br />Your complete tech partner.</>,
             })}
           </Reveal>
           <Reveal as="p" delay={180} className="mt-8 max-w-2xl text-base leading-[1.8] text-muted-foreground md:text-lg">
             {t({
-              ja: "DreamCha（ドリームチャ）は、皆様のデザインを、強固なシステムインフラと堅牢なバックエンド実装で形にする開発パートナーチームです。技術商談の窓口からバグの保証まで、裏側をトータルで引き受けます。",
-              en: "DreamCha turns your design into reality with robust system infrastructure. From technical negotiation to bug guarantees, we handle the backend end to end.",
+              ja: "DreamCha（ドリームチャ）は、堅牢なバックエンドとAIを強みとする開発パートナーチームです。決済・API・データベース・セキュリティからAIエージェント開発までを核に、ご要望に応じてフロントエンドを含む開発一式にも対応。技術商談の窓口からバグの保証まで、トータルで引き受けます。",
+              en: "DreamCha is a development partner whose core strength is robust backend engineering and AI — from payments, APIs, databases and security to AI-agent development. On request, we also take on the full build, including the frontend. From technical negotiation to bug guarantees, we handle it end to end.",
             })}
           </Reveal>
           <Reveal delay={280} className="mt-10 flex flex-wrap items-center gap-4">
@@ -94,12 +94,12 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <Reveal><SectionLabel index="03">{t({ ja: "サービス内容", en: "Services" })}</SectionLabel></Reveal>
         <Reveal as="h2" delay={80} className="mt-6 max-w-4xl font-serif text-3xl leading-tight md:text-4xl">
-          {t({ ja: "皆様のデザインを、強固なシステムインフラと堅牢なバックエンド実装で形にする", en: "Turning your design into reality with robust system infrastructure" })}
+          {t({ ja: "堅牢なバックエンドとAIを核に、ご要望に応じて開発一式まで", en: "Backend and AI at the core — full-build delivery on request" })}
         </Reveal>
         <Reveal as="p" delay={140} className="mt-6 max-w-3xl text-base leading-[1.8] text-muted-foreground">
           {t({
-            ja: "DreamCha（ドリームチャ）は、Webデザインの美しさと世界観をそのまま活かすための、頼れる技術パートナーです。皆様が制作・コーディングされたFigmaやSTUDIOのフロント画面の仕様を完璧に尊重し、その裏側にある複雑なバックエンドシステム（Stripe決済、ログイン機能、API連携、データベース、サーバー構築）のみを専門に構築。チーム専用の強力なシステム開発部門として、技術商談の窓口からバグの保証までトータルで引き受けます。",
-            en: "DreamCha is your ultimate engineering partner, dedicated to seamlessly preserving the aesthetic beauty and distinct worldviews of your web designs. We fully respect the specifications of the frontend interfaces you have crafted or coded in Figma and STUDIO, specializing exclusively in structuring the complex backend systems behind them—including Stripe payments, authentication flows, API integrations, and database architectures. Operating as your team’s highly dedicated system development department, we manage everything from technical client consultations to full bug-warranty support.",
+            ja: "DreamCha（ドリームチャ）は、決済・認証・API連携・データベース・サーバー構築といった複雑なバックエンドと、AIエージェント・モデル開発を専門とする技術パートナーです。これらを中核としながら、ご要望に応じてフロントエンド実装を含む開発一式にも対応します。FigmaやSTUDIOで制作されたフロントの仕様はそのまま完璧に尊重し、技術商談の窓口からバグの保証までトータルで引き受けます。",
+            en: "DreamCha is an engineering partner specializing in complex backend systems — Stripe payments, authentication, API integrations, databases and server infrastructure — and in AI agent and model development. With these at our core, we also take on the full build, including frontend implementation, on request. We fully respect the frontend specs you crafted in Figma or STUDIO, and manage everything from technical client consultations to full bug-warranty support.",
           })}
         </Reveal>
         <div className="mt-14 grid gap-10 md:grid-cols-3">
@@ -107,23 +107,23 @@ function HomePage() {
             {
               icon: <Layers size={28} className="text-[var(--dreamblue)]" />,
               title: {
-                ja: "デザインを活かす、フルスタックなシステム・ドッキング",
-                en: "Seamless Full-Stack Integration—Honoring Your Design",
+                ja: "ご要望に応じた、フロントエンドを含む開発一式",
+                en: "Full-build delivery—frontend included, on request",
               },
               body: {
-                ja: "私たちDreamChaは、皆様がFigmaやSTUDIO等で制作されたデザインの世界観を1ミリも崩さず、裏側のシステムだけを美しく結合（ドッキング）させるスペシャリスト集団です。デザインの自由度を100%保ったまま、Stripe決済やLINEログイン、独自データベースなど、個人では実装が難しい重層的なバックエンドだけをスマートに実装します。",
-                en: "At DreamCha, we seamlessly integrate robust backend functionality into your Figma or STUDIO layouts without altering a single pixel of your aesthetic vision. Leaving your creative freedom 100% intact, we expertly handle complex engineering underneath—including Stripe payments, LINE login, and custom databases.",
+                ja: "バックエンドを中核としながら、ご要望に応じてフロントエンド実装まで一気通貫で対応します。FigmaやSTUDIO等で制作されたデザインをお持ちの場合は、その世界観を1ミリも崩さず裏側のシステムを美しく結合。Stripe決済やLINEログイン、独自データベースなど、個人では実装が難しい重層的なシステムをスマートに実装します。",
+                en: "With backend at our core, we can deliver the frontend implementation end-to-end on request. When you bring a design from Figma or STUDIO, we integrate the system without altering a single pixel of its worldview—adding Stripe payments, LINE login, custom databases and more.",
               },
             },
             {
               icon: <ShieldCheck size={28} className="text-[var(--dreamblue)]" />,
               title: {
-                ja: "複雑なシステム要件の完全実装",
-                en: "Full implementation of complex system requirements",
+                ja: "複雑なバックエンド と AI の完全実装",
+                en: "Complex backend & AI implementation",
               },
               body: {
-                ja: "クライアントから求められるStripeなどの外部決済API連携、会員マイページ機能、複雑なデータベース（DB）構築、大規模ECサイト、強固なセキュリティ実装など、デザイナー様が一人で抱えるにはリスクの高すぎる重層的なバックエンド開発を、チームのバックエンドエンジニア陣が完璧に形にします。",
-                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC, robust security—the layered backend work that's too risky for a designer to carry alone is handled perfectly by backend engineers of our team.",
+                ja: "外部決済API連携（Stripe等）、会員マイページ機能、複雑なデータベース構築、大規模ECサイト、強固なセキュリティ実装に加え、AIエージェント開発やモデルのファインチューニング、応用MLまで。一人で抱えるにはリスクの高い重層的な開発を、チームのバックエンド・AIエンジニア陣が完璧に形にします。",
+                en: "External payment API integration (Stripe, etc.), member pages, complex databases, large-scale EC and robust security—plus AI-agent development, model fine-tuning and applied ML. The layered, high-risk work that's too much to carry alone is handled perfectly by our backend and AI engineers.",
               },
             },
             {

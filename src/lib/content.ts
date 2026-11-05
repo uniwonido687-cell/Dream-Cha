@@ -26,17 +26,45 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア / テクニカルディレクター",
       en: "Backend Engineer / Technical Director",
     },
-    location: { ja: "経験年数", en: "8 years" },
-    eYears: { ja: "8年", en: "Years of experience" },
-    skills: ["Go","Java", "TypeScript / FastAPI", "AWS", "Docker", "DB設計", "要件定義"],
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "8年", en: "8 years" },
+    skills: ["Go","Java", "TypeScript / FastAPI", "AWS", "Docker", "DB設計", "AIエージェント開発", "要件定義"],
     photo: "/members/murakami.png",
     bio: {
-      ja: "現役のシニアバックエンドエンジニアとして、DreamChaの開発全体を率いる技術責任者。大規模データベースの最適化やミッションクリティカルなインフラ構築の経験を基に、FigmaやSTUDIOの設計意図を正確に読み取り、API連携や決済機能を安定して運用するための技術設計とディレクションを統括します。",
-      en: "An active senior backend engineer and the technical lead overseeing DreamCha's development. Drawing on extensive experience in large-scale database optimisation and mission-critical infrastructure, he translates Figma and STUDIO designs into robust architecture for stable API integrations and payment systems.",
+      ja: "現役のシニアバックエンドエンジニアとして、DreamChaの開発全体を率いる技術責任者。大規模データベースの最適化やミッションクリティカルなインフラ構築の経験を基に、FigmaやSTUDIOの設計意図を正確に読み取り、API連携や決済機能を安定して運用するための技術設計とディレクションを統括します。近年はチームのAIエージェント・モデル開発プロジェクトにも、技術面から関与しています。",
+      en: "An active senior backend engineer and the technical lead overseeing DreamCha's development. Drawing on extensive experience in large-scale database optimisation and mission-critical infrastructure, he translates Figma and STUDIO designs into robust architecture for stable API integrations and payment systems. More recently he has also been involved, from the technical side, in the team's AI-agent and model-development projects.",
     },
     quote: {
       ja: "皆様の専属CTOとして商談を技術面から支え、クライアントが納得できる提案を組み立てます。複雑なバックエンドも安心してお任せください。",
       en: "As your dedicated CTO, I support client negotiations from the technical side and build proposals they can trust. Leave the complex backend work to us.",
+    },
+  },
+  {
+    id: "yamazaki",
+    initials: "SY",
+    tone: "oklch(0.52 0.15 200 / 0.28)",
+    name: { ja: "佐藤 大和", en: "Sato Yamato" },
+    role: {
+      ja: "AIエンジニア / エージェント・応用ML",
+      en: "AI Engineer / Agents & Applied ML",
+    },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "9年", en: "9 years" },
+    skills: [
+      "AI Agents",
+      "LLM / Fine-tuning",
+      "Adversarial ML",
+      "Python",
+      "Full-stack / Web3",
+    ],
+    photo: "/members/SatoYamato.png",
+    bio: {
+      ja: "フルスタック開発からブロックチェーンエンジニアリングまでを経て、現在はAI開発に専念するエンジニア。直近2年間で、自律型コーディングエージェントの構築、ドメイン特化モデルのファインチューニング、敵対的テストによるセキュリティ強化に取り組み、培ったシステム設計力を、実用的で信頼性の高いAIへと結実させています。",
+      en: "An AI engineer whose career spans full-stack development through blockchain engineering, now focused entirely on applied AI. Over the past two years he has built autonomous coding agents, fine-tuned domain-specific models, and hardened security systems through adversarial testing — turning deep systems experience into reliable, production-minded AI.",
+    },
+    quote: {
+      ja: "長年のシステム・Web3経験を、現場で通用するAIへ。プレッシャー下でも崩れないエージェント・モデル・セキュリティを形にします。",
+      en: "I turn years of systems and Web3 experience into AI that ships — agents, models, and security that hold up under real pressure.",
     },
   },
   {
@@ -48,8 +76,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "9年", en: "9 Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "9年", en: "9 years" },
     skills: [
       "Node.js",
       "TypeScript",
@@ -60,41 +88,12 @@ export const team: Member[] = [
     ],
     photo: "/members/inoue.png",
     bio: {
-      ja: "見た目の美しさと、裏側のシステムの安定性を両立させるフルスタックエンジニア。STUDIOと外部APIの連携やWordPressの高度なカスタマイズを得意とし、既存デザインの魅力を損なうことなく、必要な機能を柔軟かつ迅速に実装します。",
-      en: "A full-stack engineer who balances visual quality with reliable system performance. Specialising in STUDIO integrations, external APIs, and advanced WordPress customisation, he adds the required functionality without compromising the original design.",
+      ja: "見た目の美しさと、裏側のシステムの安定性を両立させるフルスタックエンジニア。STUDIOと外部APIの連携やWordPressの高度なカスタマイズを得意とし、既存デザインの魅力を損なうことなく、必要な機能を柔軟かつ迅速に実装します。近年はAIエージェントやセキュリティ関連のプロジェクトにもサポートとして参加しています。",
+      en: "A full-stack engineer who balances visual quality with reliable system performance. Specialising in STUDIO integrations, external APIs, and advanced WordPress customisation, he adds the required functionality without compromising the original design. More recently he has contributed on a part-time basis to the team's AI-agent and security projects.",
     },
     quote: {
       ja: "ノーコードやWordPressの制約にも柔軟に対応します。デザインの美しさを保ちながら、裏側の仕組みを安定して動かします。",
       en: "I work flexibly around the limits of no-code and WordPress, keeping the design beautiful while making the underlying system reliable.",
-    },
-  },
-  {
-    id: "yamazaki",
-    initials: "SY",
-    tone: "oklch(0.52 0.15 200 / 0.28)",
-    name: { ja: "佐藤 大和", en: "Sato Yamato" },
-    role: {
-      ja: "ブロックチェーンインフラエンジニア",
-      en: "Blockchain Infrastructure Engineer",
-    },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "10年以上", en: "10+ years" },
-    skills: [
-      "Solidity",
-      "Rust",
-      "Go",
-      "TypeScript",
-      "DeFi",
-      "Cross-Chain",
-    ],
-    photo: "/members/SatoYamato.png",
-    bio: {
-      ja: "DeFiプロトコルとクロスチェーンインフラの設計を専門とするブロックチェーンエンジニア。スマートコントラクトや分散型システムの構築を通じて、高負荷にも耐えるセキュアなWeb3基盤を実装し、複雑な金融システムを安定稼働へ導きます。",
-      en: "A blockchain engineer specializing in DeFi protocol design and cross-chain infrastructure. Through smart contract and distributed system development, he implements secure Web3 foundations that withstand high traffic and guides complex financial systems toward stable operation.",
-    },
-    quote: {
-      ja: "ブロックチェーンの技術的な制約を裏側から解消し、Web3の世界でも安心して動き続けるシステム基盤を構築します。",
-      en: "I resolve blockchain's technical constraints from the backend, building system foundations that operate reliably in the Web3 world.",
     },
   },
   {
@@ -106,8 +105,8 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア / データベース最適化",
       en: "Backend Engineer / Database Optimisation",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "7年", en: "7Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "7年", en: "7 years" },
     skills: [
       "Node.js",
       "Python",
@@ -118,8 +117,8 @@ export const team: Member[] = [
     ],
     photo: "/members/daiki.png",
     bio: {
-      ja: "大規模データベース設計とバックエンド開発に5年間携わり、高負荷に耐えるデータ基盤と高速APIの構築を専門とするエンジニア。利用者やデータ量の増加を見据え、長期的な運用と拡張に対応できるシステムを設計します。",
-      en: "A backend engineer with five years of experience in large-scale database design and development. He specialises in high-performance APIs and data platforms built to support increasing traffic, growing datasets, and long-term system expansion.",
+      ja: "大規模データベース設計とバックエンド開発に7年間携わり、高負荷に耐えるデータ基盤と高速APIの構築を専門とするエンジニア。利用者やデータ量の増加を見据え、長期的な運用と拡張に対応できるシステムを設計します。",
+      en: "A backend engineer with seven years of experience in large-scale database design and development. He specialises in high-performance APIs and data platforms built to support increasing traffic, growing datasets, and long-term system expansion.",
     },
     quote: {
       ja: "利用者が増えても安定して動き続けるデータベースと、高速なAPIを設計します。大規模なデータ連携にも確かな基盤で応えます。",
@@ -135,8 +134,8 @@ export const team: Member[] = [
       ja: "バックエンドエンジニア / インフラ",
       en: "Backend & Infrastructure Engineer",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "13年", en: "13 Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "13年", en: "13 years" },
     skills: ["Go", "PostgreSQL", "Redis", "Docker", "GitHub Actions"],
     photo: "/members/nakamura.jpg",
     bio: {
@@ -157,8 +156,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "30年", en: "30 Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "30年", en: "30 years" },
     skills: [
       "Java",
       "TypeScript",
@@ -186,8 +185,8 @@ export const team: Member[] = [
       ja: "デザインコミュニケーター / クリエイティブ通訳",
       en: "Design Communicator / Creative Translator",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "9年", en: "9 Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "9年", en: "9 years" },
     skills: [
       "UI/UX",
       "Figma",
@@ -213,8 +212,8 @@ export const team: Member[] = [
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
     },
-    location: { ja: "経験年数", en: "Years of experience" },
-    eYears: { ja: "10年", en: "10 Years" },
+    location: { ja: "経験年数", en: "Experience" },
+    eYears: { ja: "10年", en: "10 years" },
     skills: [
       "TypeScript",
       "Next.js",
@@ -252,6 +251,102 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "ai-agent-subnet62",
+    year: "2025.05–2026.08",
+    category: {
+      ja: "AIエージェント開発 / 自律型ソフトウェアエンジニアリング",
+      en: "AI Agent Engineering / Autonomous Software Engineering",
+    },
+    title: {
+      ja: "世界の精鋭と競う競技級・自律ソフトウェアエンジニアAIエージェント",
+      en: "Competition-grade Autonomous Software-Engineer AI Agent",
+    },
+    before: {
+      ja: "Ridges AIは、自律型コーディングエージェントが未知の実タスクで直接競い合い、非公開テストで継続的に採点されるオープンなアリーナを運営しています。厳しいコストとレイテンシの制約のもと、多くのエージェントが越えられない高い基準が課されます。",
+      en: "Ridges AI runs an open arena where autonomous coding agents compete head-to-head on unseen real-world tasks, continuously scored by hidden test suites under tight cost and latency budgets — a bar that most agents fail to clear.",
+    },
+    solution: {
+      ja: "大規模リポジトリに対するコンテキスト検索、LLMによる計画立案、最小差分のパッチ生成、そして提出前に自らの修正を検証する自己修正ループを備えたエンドツーエンドのエージェントを設計・実装しました。実行ごとの結果が安定するよう信頼性とコスト・レイテンシ効率を重視して作り込み、チームの上級エンジニアと計測に基づく改善を重ねました。",
+      en: "We designed and built an end-to-end agent — context retrieval over large repositories, LLM-driven planning, minimal-diff patch generation, and a self-validation loop that re-checks its own fix before submitting — engineered for reliability and cost/latency efficiency so results stay stable across runs, iterated with our senior engineers through measured, evidence-based improvements.",
+    },
+    result: {
+      ja: "プラットフォームの整合性・スクリーニング審査を突破し、世界中のチームと競いながら、再現性のある堅牢なエージェント構成を実証しました。チームは自律ソフトウェアエンジニアリングエージェントの再利用可能な設計図を獲得し、AIエージェント開発力を大きく前進させました。",
+      en: "The agent cleared the platform's integrity and screening gates and competed against teams worldwide, demonstrating a robust, reproducible agent architecture. The team now owns a reusable blueprint for autonomous software-engineering agents and substantially advanced its AI-agent engineering capability.",
+    },
+    stack: ["AI Agent", "LLM Orchestration", "RAG", "Prompt Engineering", "Python", "Ridges AI"],
+    metrics: [
+      { label: { ja: "タスク", en: "Tasks" }, value: "110" },
+      { label: { ja: "DBエンジン", en: "Engines" }, value: "2" },
+      { label: { ja: "採点方式", en: "Grading" }, value: "Hidden-test" },
+    ],
+    hue: "oklch(0.55 0.17 290)",
+    image: "/cases/ridges-agent.png",
+  },
+  {
+    id: "genomics-variant-model",
+    year: "2025.07–2026.07",
+    category: {
+      ja: "AIモデル開発 / ドメイン特化ファインチューニング",
+      en: "AI Model Training / Domain-specialized Fine-tuning",
+    },
+    title: {
+      ja: "ゲノミクス領域に特化したバリアント検出モデルの学習・評価基盤構築",
+      en: "Training & Evaluation Pipeline for a Domain-specialized Variant-Detection Model",
+    },
+    before: {
+      ja: "信頼できる変異検出は単一モデルの問題ではなく、データ整備・ファインチューニング・非公開ゲノムに対する客観評価という学習ループ全体の問題です。Minosはこの採点を行うオープンなゲノミクス・ベンチマークを運営しています。",
+      en: "Reliable variant detection is less about a single model than the full training loop — data curation, fine-tuning, and objective evaluation against hidden genomes. Minos operates the open genomics benchmark that scores exactly this.",
+    },
+    solution: {
+      ja: "データ・学習・評価のパイプラインを構築しました。シーケンス入力を正規化し、モデルをファインチューニングし、ホールドアウトした合成バリアントに対して再現性のある採点で測定。チームの専門メンバーと計測に基づく反復改善を重ねました。",
+      en: "We built the data, training, and evaluation pipeline — normalizing sequencing inputs, fine-tuning the model, and measuring against held-out synthetic variants with reproducible scoring — iterating with the team's specialists through measured improvements.",
+    },
+    result: {
+      ja: "ゲノムモデルの train→evaluate→improve を繰り返せる基盤を確立し、他のドメイン特化モデル案件にも転用できるMLOps／ファインチューニング能力を獲得しました。",
+      en: "We established a repeatable train→evaluate→improve loop for genomic models and gained MLOps / fine-tuning capability transferable to other domain-specialized model projects.",
+    },
+    stack: ["AI Model Training", "Fine-tuning", "MLOps", "PyTorch", "Python", "Minos"],
+    metrics: [
+      { label: { ja: "学習ループ", en: "Pipeline" }, value: "train→eval" },
+      { label: { ja: "領域", en: "Domain" }, value: "Genomics" },
+      { label: { ja: "評価", en: "Eval" }, value: "Hidden-set" },
+    ],
+    hue: "oklch(0.55 0.13 150)",
+    image: "/cases/genomics-variant.png",
+  },
+  {
+    id: "security-bot-detection",
+    year: "2025.06–2026.10",
+    category: {
+      ja: "AIセキュリティ / レッドチーム・異常検知",
+      en: "AI Security / Red-Team & Anomaly Detection",
+    },
+    title: {
+      ja: "ブラウザ拡張を用いた異常検知とその回避に挑む攻防両面のAIセキュリティ",
+      en: "Offensive & Defensive AI Security: Browser-Extension Anomaly Detection and Evasion",
+    },
+    before: {
+      ja: "Innerworksは、ブラウザ・拡張機能のシグナルから自動化・異常な挙動を検知するモデルと、それを回避しようとする敵対者を競わせるオープンな場を運営しています。高い検知精度と、現実的な回避技術の双方が、システムを前進させます。",
+      en: "Innerworks runs an open challenge pitting models that detect automated and anomalous behavior from browser & extension signals against adversaries trying to evade them — where both high detection accuracy and realistic evasion push the system forward.",
+    },
+    solution: {
+      ja: "チームはレッドチームとブルーチームの両方を担いました。検知を回避する自動化（異常回避）をブラウザ・拡張機能上で構築する一方、それを捕捉するよう異常検知モデルを改良。あらゆる回避の成功がラベル付きの学習シグナルとなり、ラウンドを重ねるごとに精度が積み上がりました。",
+      en: "The team operated as both red and blue team — building evasive browser/extension automation to bypass detection (anomaly evasion) while improving the anomaly-detection model to catch it. Every successful bypass became a labeled training signal, compounding accuracy over rounds.",
+    },
+    result: {
+      ja: "閉じた敵対的ループを通じて異常検知の確かな強化を実現し、ブラウザ・拡張機能環境における攻防両面のセキュリティ専門性を深めました。",
+      en: "We delivered measurable hardening of anomaly detection through a closed adversarial loop, deepening the team's dual offensive and defensive security expertise in browser and extension environments.",
+    },
+    stack: ["AI Security", "Red-Team", "Anomaly Detection", "Browser/Extension", "Behavioral Signals", "Innerworks"],
+    metrics: [
+      { label: { ja: "役割", en: "Role" }, value: "Red+Blue" },
+      { label: { ja: "シグナル", en: "Signals" }, value: "Browser/Ext" },
+      { label: { ja: "ループ", en: "Loop" }, value: "Adversarial" },
+    ],
+    hue: "oklch(0.52 0.16 25)",
+    image: "/cases/security-redteam.png",
+  },
+  {
     id: "closed-marketing",
     year: "2025.11",
     category: { ja: "会員制マーケティング / クローズドプラットフォーム", en: "Membership Marketing / Closed Platform" },
@@ -268,8 +363,8 @@ export const caseStudies: CaseStudy[] = [
       en: "Without altering a single pixel of the design, we perfectly implemented LINE Login integrated authentication, role-based dynamic content filtering, and payment gateway linkages into the backend. By adopting a secure design compliant with OAuth 2.0 / OIDC, we established strict token signature verification via AWS Lambda and row-level security (RLS) with transactional mutual exclusion on Amazon Aurora. This allowed the designer to focus 100% on the visual creative without worrying about complex backend logic, successfully driving a substantial increase in contract value.",
     },
     result: {
-      ja: "デザイナーは画面設計に集中したまま、クローズドな会員マーケティング基盤をエンタープライズ基準のフルパッケージで納品。セキュリティリスクやデータ改ざんの危険を完全にゼロに抑え、受注単価が従来の3倍になりました。",
-      en: "The designer maximized their focus on interface layouts while delivering an enterprise-grade, closed membership marketing infrastructure as a full package. Security threats and data tampering risks were mitigated to absolute zero, successfully tripling the project's standard contract unit price.",
+      ja: "デザイナーは画面設計に集中したまま、クローズドな会員マーケティング基盤をエンタープライズ基準のフルパッケージで納品。セキュリティリスクやデータ改ざんの危険を完全にゼロに抑え、受注単価が従来の2倍になりました。",
+      en: "The designer maximized their focus on interface layouts while delivering an enterprise-grade, closed membership marketing infrastructure as a full package. Security threats and data tampering risks were mitigated to absolute zero, successfully doubling the project's standard contract unit price.",
     },
     stack: ["Next.js", "LINEログイン", "会員認証", "Stripe", "PostgreSQL"],
     metrics: [
@@ -399,7 +494,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "manyu-randoselu",
-    year: "2026",
+    year: "2026.07",
     category: { ja: "EC・ブランドサイト / ランドセルメーカー", en: "EC & Brand Site / Randoseru Maker" },
     title: {
       ja: "手づくりランドセルブランドのEC・予約基盤構築",
@@ -428,7 +523,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "libero-home",
-    year: "2026",
+    year: "2026.07",
     category: { ja: "コーポレート・ブランドサイト / 注文住宅", en: "Corporate & Brand Site / Custom Homes" },
     title: {
       ja: "工務店ブランドサイトとイベント予約導線の構築",
@@ -457,7 +552,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "art-asada",
-    year: "2026",
+    year: "2026.08",
     category: { ja: "医療・クリニックサイト / 予約", en: "Medical Clinic Site / Reservations" },
     title: {
       ja: "不妊治療クリニックの予約・診療案内サイト構築",

@@ -26,7 +26,7 @@ const jobs = [
     title: { ja: "サーバーサイドシステムエンジニア", en: "Server-side Systems Engineer" },
     subtitle: { ja: "バックエンド・コア開発", en: "Backend · Core Development" },
     description: {
-      ja: "各種 Web ア規ケーションにおけるコアロジック（DB 設計・決済 API 連携・認証システム等）のバックエンド開発および最適化業務。フロント側のデザイン要件や UI/UX の思想を忠実にシステムへ落とし込む、堅牢な裏側の構築を担います。",
+      ja: "各種 Web アプリケーションにおけるコアロジック（DB 設計・決済 API 連携・認証システム等）のバックエンド開発および最適化業務。フロント側のデザイン要件や UI/UX の思想を忠実にシステムへ落とし込む、堅牢な裏側の構築を担います。",
       en: "Backend development and optimisation of core logic (DB design, payment API integration, auth systems) across web applications. You build the robust engine that faithfully translates design intent into system reality.",
     },
     requirements: {

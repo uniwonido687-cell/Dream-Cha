@@ -106,10 +106,10 @@ function AboutPage() {
             },
             {
               n: "02",
-              title: { ja: "バックエンド特化 × ご希望に応じたフロント支援", en: "Backend-Focused with Optional Frontend Support" },
+              title: { ja: "バックエンド・AI特化 × ご希望に応じたフロント対応", en: "Backend & AI-Focused, with Frontend on Request" },
               body: {
-                ja: "窓口は1つ。複雑なAPI・決済・セキュリティ等のシステム構築を一括で引き受け、皆様の提案力を劇的に高めます。基本はバックエンド特化ですが、ご希望の場合に限りフロントの実装補助にも対応。 クライアントには「開発も万全なチーム」として安心してご紹介いただけます。",
-                en: "One single point of contact. We handle complex APIs, payments, and security, sharply boosting your project proposals. While specializing in the backend, we can support frontend implementation upon your request. Present us to your clients as your trusted full-package technical team.",
+                ja: "窓口は1つ。複雑なAPI・決済・セキュリティ等のシステム構築やAIエージェント・モデル開発を一括で引き受け、皆様の提案力を劇的に高めます。核はバックエンドとAIですが、ご要望に応じてフロントエンドを含む開発一式にも対応。 クライアントには「開発も万全なチーム」として安心してご紹介いただけます。",
+                en: "One single point of contact. We handle complex APIs, payments and security, plus AI-agent and model development, sharply boosting your proposals. Our core is backend and AI, and on request we take on the full build including the frontend. Present us to your clients as your trusted full-package technical team.",
               },
             },
             {
@@ -181,7 +181,7 @@ function AboutPage() {
                     {t(m.role)}
                   </div>
 
-                  <div className="mt-2 flex flex-wrap gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
+                  <div className="mt-2 flex flex-wrap gap-x-2 gap-y-1 font-mono text-[10px] tracking-wider text-muted-foreground">
                     <span>{t(m.location)}</span>
 
                     {t(m.eYears) !== "----" && (

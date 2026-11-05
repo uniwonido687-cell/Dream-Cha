@@ -60,10 +60,10 @@ const securityItems = [
 const policyItems = [
   {
     n: "01",
-    title: { ja: "著作権・所有権の完全分離", en: "Complete separation of copyright and ownership" },
+    title: { ja: "著作権・所有権の明確化", en: "Clear copyright and ownership" },
     body: {
-      ja: "制作されたプロダクトのうち、フロントのデザイン部分の著作権は100%デザイナーに帰属します。バックエンドのシステムコード・アーキテクチャの所有権はDreamChaに帰属します。お互いの領域へは一切不可侵とします。",
-      en: "The copyright of all front-end design in a delivered product belongs 100% to the designer. Ownership of back-end system code and architecture belongs to Dream-cha. Neither party may encroach on the other's domain.",
+      ja: "デザイナー様からデザインをご提供いただく場合、そのフロントのデザイン部分の著作権は100%デザイナー様に帰属します。私たちが構築するバックエンドのシステムコード・アーキテクチャの所有権は、事前の取り決めに基づきDreamChaに帰属します。権利の範囲は案件ごとに明文化し、トラブルを未然に防ぎます。",
+      en: "When a designer provides the design, the copyright of that front-end design remains 100% with the designer. Ownership of the backend system code and architecture we build belongs to Dream-cha, per prior agreement. The scope of rights is documented for each project to prevent disputes.",
     },
   },
   {
