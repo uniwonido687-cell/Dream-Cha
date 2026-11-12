@@ -205,9 +205,9 @@ export const team: Member[] = [
   },
   {
     id: "kato",
-    initials: "K",
+    initials: "N",
     tone: "oklch(0.55 0.15 245 / 0.28)",
-    name: { ja: "加藤 拓海", en: "Takumi Kato" },
+    name: { ja: "中島 拓海", en: "Takumi Nakashima" },
     role: {
       ja: "フルスタックエンジニア",
       en: "Full-stack Engineer",
